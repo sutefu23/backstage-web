@@ -1,0 +1,21 @@
+{
+  "name": "backstage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run postcss -w",
+    "prod": "pnpm run postcss --no-map",
+    "postcss": "postcss \"./assets/!(_)*.pcss\" --dir ./css/ --ext css"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.0.1"
+  }
+}

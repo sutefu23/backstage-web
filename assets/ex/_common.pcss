@@ -1,4 +1,108 @@
-html, body{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+@import "./_reset.pcss";
+
+body {
+  & > article,
+  > footer {
+    width: 1366px;
+    margin: auto;
+  }
+}
+
+body > header {
+  min-width: 1024px;
+  height: 45px;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: #e2dfe3 1px solid;
+  & h1 {
+    height: 45px;
+    font: normal normal 30px/45px Oswald;
+    color: #0a2843;
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+    &::before {
+      width: 46px;
+      height: 40px;
+      content: "";
+      display: inline-block;
+      background: transparent url("/img/header_logo.png") 0% 0% no-repeat padding-box;
+      margin-right: 12px;
+    }
+    margin-left: auto;
+  }
+  & nav {
+    display: flex;
+    max-width: 100%;
+    margin-right: auto;
+  }
+  & ul {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+    &#global_nav {
+      & li {
+        color: #7a7c83;
+        + li {
+          margin-left: 30px;
+        }
+        &#current_page {
+          color: #02ccfc;
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #02ccfc 0% 0% no-repeat padding-box;
+          }
+        }
+        &#about_page {
+          & a::after {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: transparent url("/img/arrow_circle_right.png") 0% 0% no-repeat padding-box;
+            margin-left: 12px;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+    &#member_nav {
+      & li {
+        font: normal normal bold 14px/20px Noto Sans JP;
+        & button {
+          width: 120px;
+          height: 40px;
+          background: initial 0% 0% no-repeat padding-box;
+          border-radius: 4px;
+          /*&#register_btn {
+            background-color: #ff6565;
+            border: 0 none;
+            color: #fff;
+          }
+          &#login_btn {
+            background-color: #f7f7f7;
+            border: 1px solid #e3e4e5;
+            color: #000;
+          }*/
+        }
+        + li {
+          margin-left: 10px;
+        }
+      }
+    }
+    & li {
+      font: normal normal 14px/20px Noto Sans JP;
+      & &.current {
+        color: #02ccfc;
+      }
+    }
+  }
 }

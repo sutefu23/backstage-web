@@ -23,8 +23,7 @@
   }
 }
 
-section > h2,
-section > header > h2 {
+section h2 {
   width: fit-content;
   transform: rotate(0.25turn);
   font: normal normal 36px/30px Oswald;
@@ -36,10 +35,13 @@ section > header > h2 {
 #section_backstage {
   background: transparent url("/img/top/top_bg_1.png") 0% 0% no-repeat padding-box;
   padding-top: 40px;
+  overflow: hidden;
   & h1 {
     font: normal normal bold 36px/52px Noto Sans JP;
     color: #0a2843;
-    margin: 114px 0 50px 233px;
+    width: 900px;
+    margin: auto;
+      margin: 114px auto 50px;
   }
   & p.button {
     width: fit-content;
@@ -47,31 +49,36 @@ section > header > h2 {
   }
 }
 #section_about {
-  position: relative;
   height: 580px;
+  & div {
+  position: relative;
+    width: 900px;
+    margin: auto;
+  }
   & h2 {
     position: absolute;
     top: 290px;
-    right: 219px;
+    /*right: 219px;*/
+    right:-20px;
   }
   & pre {
     font: normal normal 14px/30px Noto Sans JP;
-    margin-left: 233px;
+    /*margin-left: 233px;*/
   }
   & #about_img_1 {
     position: absolute;
     top: 0;
-    right: 352px;
+    right: 123px;
   }
   & #about_img_2 {
     position: absolute;
     top: -90px;
-    right: 183px;
+    right: -46px;
   }
   & #about_img_3 {
     position: absolute;
     top: 278px;
-    right: 699px;
+    right: 470px;
   }
   &::before {
     content: "";
@@ -86,9 +93,11 @@ section > header > h2 {
 }
 
 #section_features {
+  width: 900px;
+  margin: auto;
   padding-bottom: 200px;
   & h2 {
-    margin: 0 0 0 198px;
+    margin-left:-20px;
     position: relative;
     &::after {
       content: "";
@@ -167,7 +176,7 @@ section > header > h2 {
   width: 900px;
   margin: auto auto 200px;
   & h2 {
-    margin: 0 0 76px auto;
+    margin: 0 -15px 76px auto;
     position: relative;
     &::before {
       content: "";
@@ -235,6 +244,7 @@ section > header > h2 {
 
 #creators_menu {
   background: transparent url("/img/top/top_bg_2.png") 0% 0% no-repeat padding-box;
+  overflow: hidden;
   & section {
     & h2 {
       height: fit-content;
@@ -248,31 +258,30 @@ section > header > h2 {
   }
 }
 #section_recommend {
-  overflow: hidden;
   padding-top: 45px;
+  width: 900px;
   margin: auto;
-  display: flex;
+  position: relative;
   & > header {
-    flex-basis: 500px;
-    position: relative;
+    position: absolute;
     & h2 {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+      top:110px;
+      left:-60px;
       z-index: 100;
     }
   }
 
   & > section header {
     width: fit-content;
+    margin: auto;
     text-align: center;
   }
   & #recommend_slide {
+    position: relative;
     margin: 40px 0;
-    max-width: 720px;
+    max-width: 600px;
+    margin-left: auto;
     & .splide__track {
       overflow: visible;
       & .splide__slide {
@@ -282,17 +291,17 @@ section > header > h2 {
     & .splide__arrow {
       opacity: 1;
       background-color: transparent;
-      width: 35px;
+      width: 40px;
       &.splide__arrow--prev {
-        left: 0;
+        left: -35px;
       }
       &.splide__arrow--next {
-        right: 0;
+        right: -35px;
       }
       & svg {
         fill: #05ba75;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -306,6 +315,7 @@ section > header > h2 {
     margin: auto;
     & h2 {
       margin-left: auto;
+      margin-right: -20px;
     }
   }
   & ul {
@@ -348,6 +358,7 @@ section > header > h2 {
   & h2 {
     margin-top: 120px;
     margin-left: auto;
+    margin-right: -10px;
   }
   & dl {
     & div {

@@ -6,18 +6,21 @@ body {
   color: #131014;
   & > article,
   > footer {
-    width: 1366px;
+    max-width: 1366px;
+    min-width: 900px;
     margin: auto;
   }
 }
 
 body > header {
-  min-width: 1024px;
+  min-width: 900px;
+  max-width: 1024px;
+  margin: auto;
   height: 45px;
   padding: 18px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(180px, 250px) minmax(420px, 1fr) minmax(250px, 270px); 
   align-items: center;
-  width: 100%;
   border-bottom: #e2dfe3 1px solid;
   & h1 {
     height: 45px;
@@ -25,7 +28,6 @@ body > header {
     color: #0a2843;
     display: flex;
     align-items: center;
-    padding-right: 32px;
     &::before {
       width: 46px;
       height: 40px;
@@ -34,24 +36,21 @@ body > header {
       background: transparent url("/img/header_logo.png") 0% 0% no-repeat padding-box;
       margin-right: 12px;
     }
-    margin-left: auto;
   }
   & nav {
-    display: flex;
-    max-width: 100%;
-    margin-right: auto;
+    display: contents;
   }
   & ul {
+    max-width: 460px;
     height: 45px;
     display: flex;
     align-items: center;
-    margin: auto 20px;
+    justify-content: space-between;
     &#global_nav {
+    margin-right: 2rem;
       & li {
         color: #7a7c83;
-        + li {
-          margin-left: 30px;
-        }
+        white-space: nowrap;
         &#current_page {
           color: #02ccfc;
           &::after {
@@ -77,6 +76,7 @@ body > header {
       }
     }
     &#member_nav {
+      width: 250px;
       & li {
         font: normal normal bold 14px/20px Noto Sans JP;
         & button {
@@ -84,16 +84,6 @@ body > header {
           height: 40px;
           background: initial 0% 0% no-repeat padding-box;
           border-radius: 4px;
-          /*&#register_btn {
-            background-color: #ff6565;
-            border: 0 none;
-            color: #fff;
-          }
-          &#login_btn {
-            background-color: #f7f7f7;
-            border: 1px solid #e3e4e5;
-            color: #000;
-          }*/
         }
         + li {
           margin-left: 10px;

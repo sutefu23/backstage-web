@@ -234,6 +234,17 @@ section > h2 {
 
 #creators_menu{
   background: transparent url("/img/top/top_bg_2.png") 0% 0% no-repeat padding-box;
+  & section{
+      & h2 {
+        width: fit-content;
+        height: fit-content;
+        color: #05ba75;
+        border-bottom: 2px solid;
+        font: normal normal 36px/30px Oswald;
+        padding-bottom: 8px;
+        transform: rotate(90deg);
+      }  
+}
 }
 #section_recommend {
   overflow: hidden;
@@ -244,8 +255,6 @@ section > h2 {
     flex-basis: 500px;
     position: relative;
     & h2 {
-      width: fit-content;
-      height: fit-content;
       position: absolute;
       top:0;
       bottom: 0;
@@ -253,11 +262,6 @@ section > h2 {
       right: 0;
       margin: auto;
       z-index: 100;
-      color: #05ba75;
-      border-bottom: 2px solid;
-      font: normal normal 36px/30px Oswald;
-      padding-bottom: 8px;
-      transform: rotate(90deg);
     }
   }
 

@@ -22,6 +22,22 @@ $ corepack enable yarn pnpm
 - exec package
   - pnpx xxxx
 
+## 開発用コマンド
+
+### css (PostCSS)
+
+> pnpm run dev
+
+### js (TypeScript)
+
+> pnpm run watch
+
+or
+
+> pnpm tsc
+
+## 表示確認
+VS Codeに[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)をインストールして、右下に出てくるGo Liveをクリックしてください。
 
 ## スライダー設定
 https://ja.splidejs.com/guides/options/

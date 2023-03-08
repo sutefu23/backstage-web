@@ -41,7 +41,6 @@ section > h2 {
   }
   & pre {
     font: normal normal 14px/30px Noto Sans JP;
-    color: #131014;
     margin-left: 233px;
   }
   & #about_img_1 {
@@ -113,7 +112,6 @@ section > h2 {
       }
       & dd {
         font: normal normal 14px/30px Noto Sans JP;
-        color: #131014;
         height: 80px;
       }
       &:nth-of-type(1) {
@@ -148,4 +146,79 @@ section > h2 {
       }
     }
   }
+}
+
+#section_merit {
+  width: 900px;
+  margin: auto auto 200px;
+  & h2 {
+    margin: 0 0 76px auto;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      transform: rotate(-0.25turn);
+      width: 195px;
+      height: 165px;
+      background: transparent url("/img/top/Merit.png") 0% 0% no-repeat padding-box;
+      position: absolute;
+      top: 75px;
+      left: -75px;
+    }
+  }
+  & > ul {
+    display: flex;
+    gap: 4px;
+    border-bottom: #0a2843 4px solid;
+    box-sizing: border-box;
+    & li {
+      width: 450px;
+      height: calc(70px - 4px);
+      background: #e3e4e5 0% 0% no-repeat padding-box;
+      font: normal normal 20px/29px Noto Sans JP;
+      border-bottom: #fff 6px solid;
+      box-sizing: border-box;
+      border-radius: 10px 10px 0px 0px;
+      text-align: center;
+      line-height: calc(70px - 4px);
+      &:hover {
+        opacity: 0.75;
+      }
+      &.active {
+        background: #0a2843 0% 0% no-repeat padding-box;
+        color: #ffffff;
+        border: none 0;
+      }
+    }
+  }
+  & > section {
+    display: none;
+    padding: 40px 0;
+    overflow: hidden;
+    &.show {
+      display: block;
+    }
+    & h3 {
+      display: none;
+    }
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        max-width: 450px;
+      }
+    }
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 40px;
+    }
+  }
+}
+
+#section_recommend {
+  width: 900px;
+  margin: auto;
 }

@@ -6,6 +6,20 @@
     & img {
       width: 100%;
     }
+    & .splide__pagination {
+      gap: 0 10px;
+    }
+    & .splide__pagination__page {
+      width: 14px;
+      height: 14px;
+      background: transparent;
+      outline: white 1px solid;
+
+      &.is-active {
+        background: #02ccfc;
+        outline: none;
+      }
+    }
   }
 }
 
@@ -218,7 +232,67 @@ section > h2 {
   }
 }
 
+#creators_menu{
+  background: transparent url("/img/top/top_bg_2.png") 0% 0% no-repeat padding-box;
+}
 #section_recommend {
-  width: 900px;
+  overflow: hidden;
+  padding-top: 45px;
   margin: auto;
+  display: flex;
+  & > header {
+    flex-basis: 500px;
+    position: relative;
+    & h2 {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+      color: #05ba75;
+      border-bottom: 2px solid;
+      font: normal normal 36px/30px Oswald;
+      padding-bottom: 8px;
+      transform: rotate(90deg);
+    }
+  }
+
+  & > section header {
+    width: fit-content;
+    text-align: center;
+    & h3 {
+      color: #05ba75;
+      font: normal normal bold 36px/52px Noto Sans CJK JP;
+    }
+  }
+  & #recommend_slide {
+    margin: 40px 0;
+    max-width: 720px;
+    & .splide__track {
+      overflow: visible;
+      & .splide__slide {
+        text-align: center;
+      }
+    }
+    & .splide__arrow {
+      opacity: 1;
+      background-color: transparent;
+      width: 35px;
+      &.splide__arrow--prev {
+        left: 0;
+      }
+      &.splide__arrow--next {
+        right: 0;
+      }
+      & svg {
+        fill: #05ba75;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
 }

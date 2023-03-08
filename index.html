@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
     <script src="/js/top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -34,17 +39,26 @@
           <li>
             <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
           </li>
-          <!-- <li><button id="register_btn" type="button">無料登録</button></li>
-            <li><button id="login_btn" type="button">ログイン</button></li> -->
         </ul>
       </nav>
     </header>
     <article>
       <div id="top_slider">
-        <!-- スライダー -->
-        <p id="main_slide">
-          <img src="/img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
-        </p>
+        <div id="main_slide" class="splide" role="group" aria-label="BACKSTAGE">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </li>
+              <li class="splide__slide">
+                <img src="/img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <section id="section_backstage">
         <p class="button">
@@ -159,12 +173,75 @@ BACKSTAGE限定コンテンツが視聴、
             <li><img src="/img/top/top_fan_2.png" alt="" /></li>
             <li><img src="/img/top/top_fan_3.png" alt="" /></li>
           </ul>
-
         </section>
       </section>
+      <div id="creators_menu">
+        <section id="section_recommend">
+          <header>
+            <h2>Recommend</h2>
+          </header>
+          <section>
+            <header>
+              <h3>いちおしのクリエイター</h3>
+              <p>今人気急上昇中のおすすめのクリエイターです。</p>
+            </header>
+            <div id="recommend_slide" class="splide" role="group" aria-label="creators">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_1.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_2.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_1.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_2.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_1.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_2.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_1.png" alt="名前" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/img/top/top_recommend_2.png" alt="名前" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul id="">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </section>
+        </section>
+        <section id="section_search">
+          <header>
+            <h2>Search</h2>
+            <h3>クリエイターを探す</h3>
+          </header>
+        </section>
+      </div>
     </article>
     <footer>
       <p>© サイトタイトル</p>
     </footer>
+    <script>
+      new Splide("#main_slide", { arrows: false }).mount();
+      new Splide("#recommend_slide", {
+        perPage: 3,
+        pagination: false,
+        arrowPath:
+          "M36.738,19.369A17.369,17.369,0,1,0,19.369,36.738,17.375,17.375,0,0,0,36.738,19.369ZM19.369,21.106H12.421V17.632h6.948V12.421l6.948,6.948-6.948,6.948Z",
+      }).mount();
+    </script>
   </body>
 </html>

@@ -21,3 +21,7 @@ $ corepack enable yarn pnpm
   - pnpm run build
 - exec package
   - pnpx xxxx
+
+
+## スライダー設定
+https://ja.splidejs.com/guides/options/

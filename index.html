@@ -251,44 +251,47 @@ BACKSTAGE限定コンテンツが視聴、
           </p>
         </section>
       </div>
+
+      <section id="section_price">
+        <header>
+          <h2>Price</h2>
+          <h3>気軽に無料で始められます</h3>
+          <p>会員登録から運用まで、全て無料でBACKSTAGEをご利用いただけます。</p>
+        </header>
+
+        <p class="image"><img src="/img/top/top_price.png" alt="" /></p>
+
+        <p class="button">
+          <a href="#"><img src="/img/top/top_button_3.png" alt="詳しくはこちら" /></a>
+        </p>
+      </section>
+
+      <section id="section_qanda">
+        <h2>Q&A</h2>
+
+        <dl>
+          <div>
+            <dt>BACKSTAGEで活動を始めるのにお金はかかりますか？</dt>
+            <dd><p>BACKSTAGEは登録から運用まで全て無料で使用できます。</p></dd>
+          </div>
+          <div>
+            <dt>支援プランの金額設定は自由に行えますか？</dt>
+            <dd>
+              <p>月額200円（税抜）以上であれば、100円単位で変更できます。</p>
+              <p>ファンが支援を開始すると金額を変更できなくなるのでご注意ください。</p>
+            </dd>
+          </div>
+        </dl>
+        <p class="button">
+          <a href="#"><img src="/img/top/top_button_3.png" alt="詳しくはこちら" /></a>
+        </p>
+      </section>
     </article>
 
-    <section id="section_price">
-      <header>
-        <h2>Price</h2>
-        <h3>気軽に無料で始められます</h3>
-        <p>会員登録から運用まで、全て無料でBACKSTAGEをご利用いただけます。</p>
-      </header>
-
-      <p class="image"><img src="/img/top/top_price.png" alt="" /></p>
-
-      <p class="button">
-        <a href="#"><img src="/img/top/top_button_3.png" alt="詳しくはこちら" /></a>
-      </p>
-    </section>
-
-    <section id="section_qanda">
-      <h2>Q&A</h2>
-
-      <dl>
-        <div>
-          <dt>BACKSTAGEで活動を始めるのにお金はかかりますか？</dt>
-          <dd><p>BACKSTAGEは登録から運用まで全て無料で使用できます。</p></dd>
-        </div>
-        <div>
-          <dt>支援プランの金額設定は自由に行えますか？</dt>
-          <dd>
-            <p>月額200円（税抜）以上であれば、100円単位で変更できます。</p>
-            <p>ファンが支援を開始すると金額を変更できなくなるのでご注意ください。</p>
-          </dd>
-        </div>
-      </dl>
-      <p class="button">
-        <a href="#"><img src="/img/top/top_button_3.png" alt="詳しくはこちら" /></a>
-      </p>
-    </section>
-
     <footer>
+      <section>
+        <h2>BACKSTAGE</h2>
+      </section>
       <p>©2023 BACKSTAGE.</p>
     </footer>
     <script>
@@ -300,6 +303,11 @@ BACKSTAGE限定コンテンツが視聴、
         pagination: false,
         arrowPath:
           "M36.738,19.369A17.369,17.369,0,1,0,19.369,36.738,17.375,17.375,0,0,0,36.738,19.369ZM19.369,21.106H12.421V17.632h6.948V12.421l6.948,6.948-6.948,6.948Z",
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
       }).mount();
     </script>
   </body>

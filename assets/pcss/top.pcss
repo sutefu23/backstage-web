@@ -23,7 +23,7 @@
   }
 }
 
-section h2 {
+article section h2 {
   width: fit-content;
   transform: rotate(0.25turn);
   font: normal normal 36px/30px Oswald;
@@ -45,9 +45,11 @@ section h2 {
   & h1 {
     font: normal normal bold 36px/52px Noto Sans JP;
     color: #0a2843;
-    width: 900px;
-    margin: auto;
+    max-width: 900px;
     margin: 114px auto 50px;
+    @media screen and (width <= 767px) {
+      padding: 0 1rem;
+    }
   }
   & p.button {
     width: fit-content;
@@ -140,16 +142,19 @@ section h2 {
   margin: auto;
   padding-bottom: 200px;
   position: relative;
+  @media screen and (width <= 767px) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
   &::after {
     content: "";
     display: inline-block;
-    // transform: rotate(-0.25turn);
     width: 311px;
     height: 165px;
     background: transparent url("/img/top/Features.png") 0% 0% no-repeat padding-box;
     position: absolute;
     @media screen and (width <= 767px) {
-      top: -75px;
+      top: -25px;
       right: 0;
     }
     @media screen and (width >= 768px) {
@@ -159,10 +164,10 @@ section h2 {
   }
   & h2 {
     @media screen and (width <= 767px) {
-      margin-left: 0;
+      margin-left: -20px;
     }
     @media screen and (width >= 768px) {
-      margin-left: -20px;
+      margin-left: -30px;
     }
   }
   & dl {
@@ -247,8 +252,13 @@ section h2 {
 }
 
 #section_merit {
-  width: 900px;
+  max-width: 900px;
   margin: auto auto 200px;
+  @media screen and (width <= 767px) {
+    margin: 100px auto;
+    padding: 0 1rem;
+  }
+
   & h2 {
     margin: 0 -15px 76px auto;
     position: relative;
@@ -270,7 +280,7 @@ section h2 {
     border-bottom: #0a2843 4px solid;
     box-sizing: border-box;
     & li {
-      width: 450px;
+      width: 100%;
       height: calc(70px - 4px);
       background: #e3e4e5 0% 0% no-repeat padding-box;
       font: normal normal 20px/29px Noto Sans JP;
@@ -302,6 +312,12 @@ section h2 {
     & > div {
       display: flex;
       justify-content: space-between;
+      @media screen and (width <= 767px) {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 2rem 0;
+      }
+
       & > * {
         max-width: 450px;
       }
@@ -312,13 +328,40 @@ section h2 {
       justify-content: space-between;
       gap: 12px;
       margin-top: 40px;
+      @media screen and (width <= 767px) {
+        justify-content: center;
+      }
+    }
+  }
+  & #fan_content ul {
+    & li {
+      background: #05ba75 0% 0% no-repeat padding-box;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (width <= 767px) {
+        width: 325px;
+        height: 112px;
+      }
+      @media screen and (width >= 768px) {
+        width: 280px;
+        height: 188px;
+      }
     }
   }
 }
 
 #creators_menu {
-  background: transparent url("/img/top/top_bg_2.png") 0% 0% no-repeat padding-box;
   overflow: hidden;
+  @media screen and (width <= 767px) {
+    padding: 0 1rem;
+    background: transparent url("/img/top/top_bg_2_sp.png") 0% 0% no-repeat padding-box;
+    background-size: cover;
+  }
+  @media screen and (width >= 768px) {
+    background: transparent url("/img/top/top_bg_2.png") 0% 0% no-repeat padding-box;
+  }
   & section {
     & h2 {
       height: fit-content;
@@ -333,19 +376,34 @@ section h2 {
 }
 #section_recommend {
   padding-top: 45px;
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   position: relative;
+  padding-bottom: 145px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 446px;
+    height: 165px;
+    background: transparent url("/img/top/Recommend.png") 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: -0.8rem;
+    bottom: 40px;
+    @media screen and (width >= 768px) {
+      left: -230px;
+      bottom: 150px;
+    }
+  }
+
   & > header {
     position: absolute;
     & h2 {
       position: absolute;
-      top: 110px;
+      top: 70px;
       left: -60px;
       z-index: 100;
     }
   }
-
   & > section header {
     width: fit-content;
     margin: auto;
@@ -355,7 +413,13 @@ section h2 {
     position: relative;
     margin: 40px 0;
     max-width: 600px;
-    margin-left: auto;
+    @media screen and (width <= 767px) {
+      width: 250px;
+      margin: 40px auto;
+    }
+    @media screen and (width >= 768px) {
+      margin-left: auto;
+    }
     & .splide__track {
       overflow: visible;
       & .splide__slide {
@@ -382,7 +446,7 @@ section h2 {
 }
 
 #section_search {
-  padding: 145px 0;
+  padding-bottom: 145px;
   & > header {
     max-width: 900px;
     text-align: center;
@@ -390,13 +454,42 @@ section h2 {
     & h2 {
       margin-left: auto;
       margin-right: -20px;
+      position: relative;
+      @media screen and (width <= 767px) {
+        margin-top: 40px;
+        top: -50px;
+      }
+      @media screen and (width >= 768px) {
+        top: 85px;
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        transform: rotate(-0.25turn);
+        width: 251px;
+        height: 165px;
+        background: transparent url("/img/top/Search.png") 0% 0% no-repeat padding-box;
+        position: absolute;
+        top: 85px;
+        left: -85px;
+        @media screen and (width >= 768px) {
+          top: 0;
+          left: -180px;
+        }
+      }
     }
   }
   & ul {
     max-width: 900px;
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    @media screen and (width >= 768px) {
+      justify-content: space-between;
+      gap: 10px;
+    }
   }
   & p.button {
     width: fit-content;
@@ -411,6 +504,24 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  @media screen and (width <= 767px) {
+    padding: 50px 1rem 0;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 191px;
+    height: 165px;
+    background: transparent url("/img/top/Price.png") 0% 0% no-repeat padding-box;
+    position: absolute;
+    bottom: 180px;
+    right: 10px;
+    @media screen and (width >= 768px) {
+      bottom: -55px;
+      right: -50px;
+    }
+  }
   & h2 {
     position: relative;
     top: 15px;
@@ -419,6 +530,17 @@ section h2 {
   & h3 {
     margin: 70px 0 20px;
     font: normal normal bold 36px/52px Noto Sans JP;
+    @media screen and (width <= 767px) {
+      margin-top: 200px;
+    }
+  }
+  & p.image {
+    @media screen and (width <= 767px) {
+      width: 220px;
+      position: absolute;
+      top: 50px;
+      right: 1rem;
+    }
   }
   & p.button {
     width: 100%;
@@ -427,18 +549,42 @@ section h2 {
 }
 
 #section_qanda {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
+  @media screen and (width <= 767px) {
+    padding: 0 1rem;
+    margin-bottom: 100px;
+  }
   & h2 {
     margin-top: 120px;
     margin-left: auto;
     margin-right: -10px;
+    &::before {
+      content: "";
+      display: inline-block;
+      transform: rotate(-0.25turn);
+      width: 178px;
+      height: 165px;
+      background: transparent url("/img/top/Q&A.png") 0% 0% no-repeat padding-box;
+      position: absolute;
+      top: 65px;
+      left: -65px;
+      @media screen and (width >= 768px) {
+        top: 60px;
+        left: -80px;
+      }
+    }
   }
   & dl {
     & div {
       padding-left: 60px;
       background: transparent url("/img/top/top_icon-q_and_a.png") 0% 0% no-repeat padding-box;
       min-height: 150px;
+      @media screen and (width <= 767px) {
+        & + div {
+          line-height: 2;
+        }
+      }
     }
     & dt {
       font: normal normal bold 18px/26px Noto Sans JP;
@@ -446,7 +592,10 @@ section h2 {
       color: #02ccfc;
       padding-top: 5px;
       margin-top: 64px;
-      margin-bottom: 37px;
+      margin-bottom: 13px;
+      @media screen and (width >= 768px) {
+        margin-bottom: 37px;
+      }
     }
     & dd {
       padding: 0 1em 0 40px;
@@ -454,9 +603,14 @@ section h2 {
       flex-direction: column;
       justify-content: center;
       color: #fff;
-      min-height: 90px;
       background: #0a2843 0% 0% no-repeat padding-box;
       border-radius: 10px;
+      @media screen and (width <= 767px) {
+        padding: 1rem;
+      }
+      @media screen and (width >= 768px) {
+        min-height: 90px;
+      }
     }
   }
   & p.button {

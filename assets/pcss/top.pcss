@@ -8,6 +8,9 @@
     }
     & .splide__pagination {
       gap: 0 10px;
+      @media screen and (width <= 767px) {
+        bottom: -2.2em;
+      }
     }
     & .splide__pagination__page {
       width: 14px;
@@ -42,6 +45,9 @@ article section h2 {
   }
   padding-top: 40px;
   overflow: hidden;
+  @media screen and (width <= 767px) {
+    padding-top: 80px;
+  }
   & h1 {
     font: normal normal bold 36px/52px Noto Sans JP;
     color: #0a2843;

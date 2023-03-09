@@ -7,23 +7,31 @@ body {
   & > article,
   > footer {
     max-width: 1366px;
-    min-width: 900px;
+    min-width: 480px;
+    @media screen and (width >= 768px) {
+      min-width: 900px;
+    }
     margin: auto;
   }
 }
 
 body > header {
-  min-width: 900px;
-  max-width: 1024px;
   margin: auto;
   height: 45px;
   padding: 18px 0;
-  display: grid;
-  grid-template-columns: minmax(180px, 250px) minmax(420px, 1fr) minmax(250px, 270px); 
-  align-items: center;
   border-bottom: #e2dfe3 1px solid;
+  @media screen and (width >= 768px) {
+    min-width: 900px;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: minmax(180px, 250px) minmax(420px, 1fr) minmax(250px, 270px);
+    align-items: center;
+  }
+
   & h1 {
+    width: fit-content;
     height: 45px;
+    margin: auto;
     font: normal normal 30px/45px Oswald;
     color: #0a2843;
     display: flex;
@@ -39,6 +47,20 @@ body > header {
   }
   & nav {
     display: contents;
+    @media screen and (width <= 767px) {
+      display: block;
+      width: 325px;
+      height: 72px;
+      position: fixed;
+      bottom: 20px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      z-index: 100;
+      background: #0a2843 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 2px #0000004d;
+      border-radius: 36px;
+    }
   }
   & ul {
     max-width: 460px;
@@ -47,7 +69,7 @@ body > header {
     align-items: center;
     justify-content: space-between;
     &#global_nav {
-    margin-right: 2rem;
+      margin-right: 2rem;
       & li {
         color: #7a7c83;
         white-space: nowrap;

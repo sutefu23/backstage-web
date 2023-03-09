@@ -33,7 +33,13 @@ section h2 {
 }
 
 #section_backstage {
-  background: transparent url("/img/top/top_bg_1.png") 0% 0% no-repeat padding-box;
+  @media screen and (width <= 767px) {
+    background: transparent url("/img/top/top_bg_1_sp.png") 0% 0% no-repeat padding-box;
+    background-size: cover;
+  }
+  @media screen and (width >= 768px) {
+    background: transparent url("/img/top/top_bg_1.png") 0% 0% no-repeat padding-box;
+  }
   padding-top: 40px;
   overflow: hidden;
   & h1 {
@@ -50,23 +56,55 @@ section h2 {
 }
 #section_about {
   position: relative;
-  width: 900px;
-  height: 580px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (width <= 767px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 50px;
+  }
+  @media screen and (width >= 768px) {
+    width: 900px;
+  }
   & h2 {
     position: absolute;
-    top: 320px;
-    right: -20px;
+    bottom: 90px;
+    right: 30px;
+    @media screen and (width >= 768px) {
+      bottom: 215px;
+      right: -20px;
+    }
   }
   & pre {
     font: normal normal 14px/30px Noto Sans JP;
   }
   & ul.images {
     position: relative;
-    padding-right: 120px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto 200px;
+    @media screen and (width <= 767px) {
+      margin-top: 80px;
+      margin-bottom: 200px;
+    }
+    @media screen and (width >= 768px) {
+      padding-right: 120px;
+    }
     & li {
+      @media screen and (width <= 767px) {
+        &#about_img_2 {
+          position: absolute;
+          top: -175px;
+          right: -30px;
+        }
+        &#about_img_3 {
+          position: absolute;
+          bottom: -180px;
+          left: -25px;
+        }
+      }
       @media screen and (width >= 768px) {
         &#about_img_2 {
           position: absolute;
@@ -90,39 +128,66 @@ section h2 {
     background: transparent url("/img/top/About.png") 0% 0% no-repeat padding-box;
     position: absolute;
     top: -224px;
-    right: -50px;
+    right: 0;
+    @media screen and (width >= 768px) {
+      right: -50px;
+    }
   }
 }
 
 #section_features {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   padding-bottom: 200px;
+  position: relative;
+  &::after {
+    content: "";
+    display: inline-block;
+    // transform: rotate(-0.25turn);
+    width: 311px;
+    height: 165px;
+    background: transparent url("/img/top/Features.png") 0% 0% no-repeat padding-box;
+    position: absolute;
+    @media screen and (width <= 767px) {
+      top: -75px;
+      right: 0;
+    }
+    @media screen and (width >= 768px) {
+      top: 40px;
+      left: -40px;
+    }
+  }
   & h2 {
-    margin-left: -20px;
-    position: relative;
-    &::after {
-      content: "";
-      display: inline-block;
-      transform: rotate(-0.25turn);
-      width: 311px;
-      height: 165px;
-      background: transparent url("/img/top/Features.png") 0% 0% no-repeat padding-box;
-      position: absolute;
-      top: -140px;
-      left: 0;
+    @media screen and (width <= 767px) {
+      margin-left: 0;
+    }
+    @media screen and (width >= 768px) {
+      margin-left: -20px;
     }
   }
   & dl {
     display: grid;
     justify-content: center;
     align-items: flex-end;
-    grid-template-columns: repeat(3, 262px);
-    grid-template-rows: repeat(2, 276px);
-    gap: 52px 40px;
-    grid-template-areas:
-      ". a b"
-      "c d e";
+    @media screen and (width <= 767px) {
+      box-sizing: border-box;
+      margin: 40px 1rem 0;
+      grid-template-columns: repeat(2, 220px);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 52px 15px;
+      grid-template-areas:
+        "a b"
+        "c d"
+        "e e";
+    }
+    @media screen and (width >= 768px) {
+      grid-template-columns: repeat(3, 262px);
+      grid-template-rows: repeat(2, 276px);
+      gap: 52px 40px;
+      grid-template-areas:
+        ". a b"
+        "c d e";
+    }
     & div {
       &::before {
         content: url("/img/top/top_about_icon_1.png");
@@ -138,7 +203,14 @@ section h2 {
       }
       & dd {
         font: normal normal 14px/30px Noto Sans JP;
-        height: 80px;
+        @media screen and (width <= 767px) {
+          height: 120px;
+          width: 220px;
+          margin: auto;
+        }
+        @media screen and (width >= 768px) {
+          height: 80px;
+        }
       }
       &:nth-of-type(1) {
         grid-area: a;

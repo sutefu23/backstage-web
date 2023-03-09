@@ -4,6 +4,7 @@
 body {
   font: normal normal 14px/30px Noto Sans JP;
   color: #131014;
+  min-width: 480px;
   & > article,
   > footer {
     min-width: 480px;
@@ -30,9 +31,13 @@ body > footer h2 {
     background: transparent url("/img/header_logo.png") 0% 0% no-repeat padding-box;
     margin-right: 12px;
   }
+  @media screen and (width <= 767px) {
+    margin: auto;
+  }
 }
 
 body > header {
+  min-width: 480px;
   margin: auto;
   height: 45px;
   padding: 18px 0;
@@ -47,20 +52,6 @@ body > header {
 
   & nav {
     display: contents;
-    @media screen and (width <= 767px) {
-      display: block;
-      width: 325px;
-      height: 72px;
-      position: fixed;
-      bottom: 20px;
-      right: 0;
-      left: 0;
-      margin: auto;
-      z-index: 100;
-      background: #0a2843 0% 0% no-repeat padding-box;
-      box-shadow: 0px 2px 2px #0000004d;
-      border-radius: 36px;
-    }
   }
   & ul {
     max-width: 460px;
@@ -70,6 +61,9 @@ body > header {
     justify-content: space-between;
     &#global_nav {
       gap: 15px;
+      @media screen and (width <= 767px) {
+        display: none;
+      }
       & li {
         color: #7a7c83;
         white-space: nowrap;
@@ -99,6 +93,9 @@ body > header {
     }
     &#member_nav {
       width: 250px;
+      @media screen and (width <= 767px) {
+        display: none;
+      }
       & li {
         font: normal normal bold 14px/20px Noto Sans JP;
         & button {
@@ -126,6 +123,27 @@ body > article {
   overflow: hidden;
 }
 
+ul#sp_nav_button {
+  display: none;
+  @media screen and (width <= 767px) {
+    position: sticky;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:33px;
+    width: 325px;
+    height: 73px;
+    background: #0a2843 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 2px #0000004d;
+    border-radius: 36px;
+  }
+}
 body > footer {
   & section {
     margin-top: 30px;
@@ -135,8 +153,11 @@ body > footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 30px 100px;
     position: relative;
+    @media screen and (width <= 767px) {
+      margin-top: 80px;
+    }
     & h2 {
       color: #fff;
     }
@@ -158,6 +179,11 @@ body > footer {
         flex-wrap: wrap;
         width: 74px;
         height: fit-content;
+        @media screen and (width <= 1000px) {
+          flex-wrap: initial;
+          width: fit-content;
+        }
+    
         & li {
           width: 32px;
           height: 32px;
@@ -184,6 +210,9 @@ body > footer {
         display: block;
         margin-left: auto;
         width: fit-content;
+      }
+      @media screen and (width <= 767px) {
+        display: none;
       }
     }
   }

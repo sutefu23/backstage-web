@@ -125,9 +125,52 @@ body > header {
 
 body > footer {
   & section {
+    padding: 90px 3rem 3rem;
+    color: #fff;
     background: #0a2843 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
     & h2 {
       color: #fff;
+      margin: 0;
+    }
+    & > ul {
+      display: flex;
+      &#sitemap {
+        gap: 50px;
+        & > li > ul {
+          & > li {
+            padding-bottom: 1rem;
+            & > ul{
+              font: normal normal 300 12px/17px Noto Sans JP;
+            }
+          }
+        }
+      }
+      &#sns {
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 74px;
+        height: fit-content;
+        & li {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    & #gotop{
+      position: absolute;
+      top:-65px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 90%;
+      & a{
+        display: block;
+        margin-left: auto;
+        width: fit-content;
+      }
     }
   }
   & > p {
@@ -135,5 +178,6 @@ body > footer {
     text-align: center;
     font: normal normal 12px/17px Oswald;
     color: #0a2843;
+    padding: 0.5rem;
   }
 }

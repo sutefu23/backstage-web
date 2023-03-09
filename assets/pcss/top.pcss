@@ -26,11 +26,11 @@
   }
 }
 
-article section h2 {
+
+@define-mixin rotate {
   width: fit-content;
   transform: rotate(0.25turn);
   font: normal normal 36px/30px Oswald;
-  color: #0a2843;
   padding-bottom: 8px;
   border-bottom: 2px solid;
 }
@@ -48,11 +48,15 @@ article section h2 {
   @media screen and (width <= 767px) {
     padding-top: 80px;
   }
-  & h1 {
+  & h2 {
     font: normal normal bold 36px/52px Noto Sans JP;
     color: #0a2843;
     max-width: 900px;
     margin: 114px auto 50px;
+    border-bottom: none;
+    padding-bottom: 0;
+    transform: rotate(0);
+    width: 100%;
     @media screen and (width <= 767px) {
       padding: 0 1rem;
     }
@@ -76,7 +80,8 @@ article section h2 {
   @media screen and (width >= 768px) {
     width: 900px;
   }
-  & h2 {
+  & h3 {
+    @mixin rotate;
     position: absolute;
     bottom: 90px;
     right: 30px;
@@ -168,7 +173,8 @@ article section h2 {
       left: -40px;
     }
   }
-  & h2 {
+  & h3 {
+    @mixin rotate;
     @media screen and (width <= 767px) {
       margin-left: -20px;
     }
@@ -266,6 +272,7 @@ article section h2 {
   }
 
   & h2 {
+    @mixin rotate;
     margin: 0 -15px 76px auto;
     position: relative;
     &::before {
@@ -377,6 +384,9 @@ article section h2 {
     & h3 {
       color: #05ba75;
       font: normal normal bold 36px/52px Noto Sans JP;
+      @media screen and (width <= 767px) {
+        font: normal normal bold 20px/29px Noto Sans CJK JP;
+      }
     }
   }
 }
@@ -404,6 +414,7 @@ article section h2 {
   & > header {
     position: absolute;
     & h2 {
+      @mixin rotate;
       position: absolute;
       top: 70px;
       left: -60px;
@@ -458,6 +469,7 @@ article section h2 {
     text-align: center;
     margin: auto;
     & h2 {
+      @mixin rotate;
       margin-left: auto;
       margin-right: -20px;
       position: relative;
@@ -529,6 +541,7 @@ article section h2 {
     }
   }
   & h2 {
+    @mixin rotate;
     position: relative;
     top: 15px;
     left: -10px;
@@ -562,6 +575,7 @@ article section h2 {
     margin-bottom: 100px;
   }
   & h2 {
+    @mixin rotate;
     margin-top: 120px;
     margin-left: auto;
     margin-right: -10px;

@@ -1,9 +1,11 @@
 module.exports = {
-  parser: require('postcss-comment'),
+  parser: require("postcss-comment"),
   plugins: {
     autoprefixer: {},
     cssnano: {},
     "postcss-import": {},
+    "postcss-mixins": {},
+    "postcss-nested": {},
     "postcss-preset-env": {
       stage: 3,
       features: {
@@ -11,6 +13,7 @@ module.exports = {
         "media-query-ranges": true,
       },
     },
-    'postcss-sort-media-queries': {},
+    "postcss-simple-vars": {},
+    "postcss-sort-media-queries": {},
   },
 };

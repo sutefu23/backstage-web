@@ -7,7 +7,7 @@
     "dev": "pnpm run postcss -w",
     "prod": "pnpm run postcss --no-map",
     "postcss": "postcss \"./assets/pcss/!(_)*.pcss\" --dir ./css/ --ext css",
-    "tsc": "pnpm tsc -w"
+    "typescript": "pnpm tsc -w"
   },
   "keywords": [],
   "author": "",

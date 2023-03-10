@@ -13,30 +13,37 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/menu.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>BACKSTAGE</h1>
+      <h1><a href="/">BACKSTAGE</a></h1>
       <nav>
         <ul id="global_nav">
-          <li id="current_page"><a href="#"></a> Home</li>
-          <li id="about_page"><a href="#">BACKSTAGEとは</a></li>
-          <li><a href="#">利用方法</a></li>
+          <li id="current_page"><a href="/">Home</a></li>
+          <li id="about_page"><a href="#whatis">BACKSTAGEとは</a></li>
+          <li>
+            <p>利用方法</p>
+            <ul>
+              <li><a href="#section_merit">― クリエイター</a></li>
+              <li><a href="#section_merit">― ファン</a></li>
+            </ul>
+          </li>
           <li><a href="#">よくある質問</a></li>
           <li><a href="#">料金</a></li>
         </ul>
         <ul id="member_nav">
-          <li>
+          <li class="button">
             <a href="#"><img src="/img/header_register.png" alt="無料登録" /></a>
           </li>
-          <li>
+          <li class="button">
             <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
           </li>
         </ul>
       </nav>
     </header>
-
+    
     <article>
       <header>
         <h2 title="PRICE">ご利用料金</h2>
@@ -131,8 +138,8 @@
       <li>
         <a href="#"><img src="/img/nav_sp_2.png" alt="login" /></a>
       </li>
-      <li>
-        <a href="#"><img src="/img/nav_sp_3.png" alt="menu" /></a>
+      <li id="open_menu">
+        <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
       </li>
       <li>
         <a href="#"><img src="/img/nav_sp_4.png" alt="page top" /></a>
@@ -145,12 +152,12 @@
         <ul id="sitemap">
           <li>
             <ul>
-              <li><a href="#">BACKSTAGEとは</a></li>
+              <li><a href="#whatis">BACKSTAGEとは</a></li>
               <li>
                 利用方法
                 <ul>
-                  <li><a href="#">― クリエイター</a></li>
-                  <li><a href="#">― ファン</a></li>
+                  <li><a href="#section_merit">― クリエイター</a></li>
+                  <li><a href="#section_merit">― ファン</a></li>
                 </ul>
               </li>
             </ul>

@@ -17,7 +17,9 @@
       height: 14px;
       background: transparent;
       outline: white 1px solid;
-
+      @media screen and (width <= 767px) {
+        outline-color: #e3e4e5;
+      }
       &.is-active {
         background: #02ccfc;
         outline: none;
@@ -37,7 +39,7 @@
 #section_backstage {
   padding-top: 40px;
   overflow: hidden;
- @media screen and (width <= 767px) {
+  @media screen and (width <= 767px) {
     padding-top: 80px;
     background: transparent url("/img/top/top_bg_1_sp.png") 0% 0% / cover no-repeat padding-box;
   }

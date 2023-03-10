@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "ex/_common.pcss";
+
+body > article > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: transparent url("/img/price/header_image.png") 0% 0% no-repeat padding-box;
+  & h2 {
+    text-align: center;
+    font: normal normal bold 36px/52px Noto Sans JP;
+    letter-spacing: 7.2px;
+    color: #0a2843;
+    line-height: 1;
+    &::before {
+      content: attr(title);
+      display: block;
+      font: normal normal 16px/30px Oswald;
+      letter-spacing: 0px;
+      color: #02ccfc;
+    }
+  }
+}
+
+#section_description {
+  max-width: 900px;
+  margin: auto;
+  & header {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title image" "content image";
+    align-items: flex-end;
+    gap: 1rem 2rem;
+    & h3 {
+      font: normal normal bold 36px/52px Noto Sans JP;
+      letter-spacing: 3.6px;
+      & em {
+        color: #02ccfc;
+      }
+    }
+    p.content {
+      grid-area: content;
+    }
+    p.image {
+      grid-area: image;
+    }
+  }
+  & > section {
+    & h4 {
+      margin: 40px auto;
+      background: #0a2843 0% 0% no-repeat padding-box;
+      text-align: center;
+      font: normal normal bold 18px/26px Noto Sans JP;
+      color: #ffffff;
+      line-height: 55px;
+    }
+    & > section {
+      & header {
+        margin: 40px auto;
+        grid-template-rows: min-content 1fr;
+        & h5 {
+          font: normal normal bold 28px/40px Noto Sans JP;
+          color: #0a2843;
+        }
+      }
+      & ul {
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+        justify-content: space-between;
+        & li {
+          color: #ffffff;
+          text-align: center;
+          font: normal normal bold 14px/24px Noto Sans JP;
+          width: 212px;
+          height: 132px;
+          background: #02ccfc 0% 0% no-repeat padding-box;
+          border-radius: 20px;
+          padding: 5px;
+          // display: flex;
+          // justify-content: center;
+          // align-content: center;
+          // display: flex;
+          // vertical-align: middle;
+          &::before{
+            display: block;
+            content: "";
+            width: 30px;
+            height: 30px;
+            margin: 15px auto;
+            background:  url("/img/price/price_list-icon.png");
+          }
+        }
+      }
+    }
+  }
+}

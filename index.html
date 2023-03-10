@@ -23,20 +23,26 @@
 
   <body>
     <header>
-      <h1>BACKSTAGE</h1>
+      <h1><a href="/">BACKSTAGE</a></h1>
       <nav>
         <ul id="global_nav">
-          <li id="current_page"><a href="#"></a> Home</li>
-          <li id="about_page"><a href="#">BACKSTAGEとは</a></li>
-          <li><a href="#">利用方法</a></li>
+          <li id="current_page"><a href="/">Home</a></li>
+          <li id="about_page"><a href="#whatis">BACKSTAGEとは</a></li>
+          <li>
+            <p>利用方法</p>
+            <ul>
+              <li><a href="#section_merit">― クリエイター</a></li>
+              <li><a href="#section_merit">― ファン</a></li>
+            </ul>
+          </li>
           <li><a href="#">よくある質問</a></li>
           <li><a href="#">料金</a></li>
         </ul>
         <ul id="member_nav">
-          <li>
+          <li class="button">
             <a href="#"><img src="/img/header_register.png" alt="無料登録" /></a>
           </li>
-          <li>
+          <li class="button">
             <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
           </li>
         </ul>
@@ -58,18 +64,18 @@
               </li>
               <li class="splide__slide">
                 <picture>
-                  <source srcset="/img/top/top_slide_1.png" media="(min-width: 768px)" />
+                  <source srcset="/img/top/top_slide_2.png" media="(min-width: 768px)" />
                   <img
-                    src="/img/top/top_slide_1.png"
+                    src="/img/top/top_slide_2.png"
                     alt="クリエイターの“本当”を知って活動を応援"
                   />
                 </picture>
               </li>
               <li class="splide__slide">
                 <picture>
-                  <source srcset="/img/top/top_slide_1.png" media="(min-width: 768px)" />
+                  <source srcset="/img/top/top_slide_3.png" media="(min-width: 768px)" />
                   <img
-                    src="/img/top/top_slide_1.png"
+                    src="/img/top/top_slide_3.png"
                     alt="クリエイターの“本当”を知って活動を応援"
                   />
                 </picture>
@@ -83,7 +89,7 @@
         <p class="button">
           <a href="#"><img src="/img/top/top_button_1.png" alt="クリエイターを探す" /></a>
         </p>
-        <h2>BACKSTAGEについて</h2>
+        <h2 id="whatis">BACKSTAGEについて</h2>
         <section id="section_about">
           <div>
             <h3>About</h3>
@@ -327,12 +333,12 @@ BACKSTAGE限定コンテンツが視聴、
         <ul id="sitemap">
           <li>
             <ul>
-              <li><a href="#">BACKSTAGEとは</a></li>
+              <li><a href="#whatis">BACKSTAGEとは</a></li>
               <li>
                 利用方法
                 <ul>
-                  <li><a href="#">― クリエイター</a></li>
-                  <li><a href="#">― ファン</a></li>
+                  <li><a href="#section_merit">― クリエイター</a></li>
+                  <li><a href="#section_merit">― ファン</a></li>
                 </ul>
               </li>
             </ul>
@@ -394,8 +400,9 @@ BACKSTAGE限定コンテンツが視聴、
       <p>©2023 BACKSTAGE.</p>
     </footer>
     <script>
-      new Splide("#main_slide", { arrows: false }).mount();
+      new Splide("#main_slide", { type: "fade", arrows: false }).mount();
       new Splide("#recommend_slide", {
+        autoplay: true,
         perPage: 2.5,
         perMove: 1,
         rewind: true,

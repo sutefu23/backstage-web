@@ -26,26 +26,40 @@ body > article > header {
 #section_description {
   max-width: 900px;
   margin: auto;
+  width: 90%;
   & header {
     margin: 60px auto;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "title image" "content image";
-    align-items: flex-end;
-    gap: 1rem 2rem;
+    @media screen and (width >= 768px) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "title image" "content image";
+      align-items: flex-end;
+      gap: 1rem 2rem;
+    }
     & h3 {
-      font: normal normal bold 36px/52px Noto Sans JP;
-      letter-spacing: 3.6px;
+      font: normal normal bold 24px/35px Noto Sans JP;
+      letter-spacing: 1.2px;
+      @media screen and (width >= 768px) {
+        font: normal normal bold 36px/52px Noto Sans JP;
+        letter-spacing: 3.6px;
+      }
       & em {
         color: #02ccfc;
       }
     }
     p.content {
       grid-area: content;
+      padding-top: 1rem;
     }
     p.image {
       grid-area: image;
+      @media screen and (width <= 767px) {
+        margin: 2rem auto;
+        & > img {
+          width: 100%;
+        }
+      }
     }
   }
   & > section {
@@ -61,17 +75,21 @@ body > article > header {
       & header {
         margin: 40px auto;
         grid-template-rows: min-content 1fr;
+        gap: 0 40px;
         & h5 {
           font: normal normal bold 28px/40px Noto Sans JP;
           color: #0a2843;
         }
       }
       & ul {
+        margin: 50px auto;
         display: flex;
         align-items: center;
-        margin: 50px auto;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px 5px;
         & li {
+          position: relative;
           color: #ffffff;
           text-align: center;
           font: normal normal bold 14px/24px Noto Sans JP;
@@ -80,21 +98,114 @@ body > article > header {
           background: #02ccfc 0% 0% no-repeat padding-box;
           border-radius: 20px;
           padding: 5px;
-          // display: flex;
-          // justify-content: center;
-          // align-content: center;
-          // display: flex;
-          // vertical-align: middle;
-          &::before{
+          @media screen and (width <= 767px) {
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+            padding-left: 70px;
+            text-align: left;
+          }
+          &::before {
             display: block;
             content: "";
             width: 30px;
             height: 30px;
-            margin: 15px auto;
-            background:  url("/img/price/price_list-icon.png");
+            background: url("/img/price/price_list-icon.png");
+            @media screen and (width <= 767px) {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 20px;
+              margin: auto;
+            }
+            @media screen and (width >= 768px) {
+              margin: 15px auto;
+            }
           }
         }
       }
+      & .button {
+        width: fit-content;
+        margin: 60px auto;
+      }
+    }
+  }
+}
+
+#section_three-features {
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  margin: 50px auto;
+  padding: 20px;
+  & h3 {
+    font: normal normal bold 36px/52px Noto Sans JP;
+    width: fit-content;
+    margin: 40px auto;
+  }
+  & dl {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c";
+    gap: 50px 30px;
+    @media screen and (width <= 767px) {
+      margin: 40px 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    & div {
+      &::before {
+        content: "";
+        text-align: center;
+        display: block;
+        margin: auto;
+      }
+      & dt {
+        text-align: center;
+        font: normal normal bold 18px/26px Noto Sans JP;
+        color: #0a2843;
+        margin: 20px auto;
+      }
+      & dd {
+        font: normal normal 14px/30px Noto Sans JP;
+        @media screen and (width <= 767px) {
+          width: 90%;
+          margin: auto;
+        }
+      }
+      &:nth-of-type(1) {
+        grid-area: a;
+        &::before {
+          content: url("/img/price/price_features_icon_1.png");
+        }
+      }
+      &:nth-of-type(2) {
+        grid-area: b;
+        &::before {
+          content: url("/img/price/price_features_icon_2.png");
+        }
+      }
+      &:nth-of-type(3) {
+        grid-area: c;
+        &::before {
+          content: url("/img/price/price_features_icon_3.png");
+        }
+      }
+    }
+  }
+  & > p {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    font: normal normal bold 30px/56px Noto Sans JP;
+    border: 1px solid #042842;
+    border-radius: 20px;
+    padding: 30px 55px;
+    text-align: center;
+    @media screen and (width <= 767px) {
+      font: normal normal bold 20px/35px Noto Sans JP;
+      padding: 20px;
     }
   }
 }

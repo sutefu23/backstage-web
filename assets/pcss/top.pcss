@@ -31,7 +31,7 @@
 @define-mixin rotate {
   width: fit-content;
   transform: rotate(0.25turn);
-  font: normal normal 36px/30px Oswald;
+  font: normal normal 500 36px/30px Oswald;
   padding-bottom: 8px;
   border-bottom: 2px solid;
 }
@@ -56,6 +56,7 @@
     transform: rotate(0);
     width: 100%;
     @media screen and (width <= 767px) {
+      font: normal normal bold 24px/35px Noto Sans JP;
       padding: 0 1rem;
     }
   }
@@ -569,7 +570,7 @@
   }
   & p.image {
     @media screen and (width <= 767px) {
-      width: 220px;
+      width: 51vw;
       position: absolute;
       top: 50px;
       right: 1rem;

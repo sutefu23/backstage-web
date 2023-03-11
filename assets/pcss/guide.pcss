@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import "ex/_common.pcss";
+
+body > article > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: transparent url("/img/price/header_image.png") 0% 0% / cover no-repeat padding-box;
+  & h2 {
+    text-align: center;
+    font: normal normal bold 36px/52px Noto Sans JP;
+    letter-spacing: 7.2px;
+    color: #0a2843;
+    line-height: 1;
+    @media screen and (width <= 767px) {
+      font: normal normal bold 24px/35px Noto Sans JP;
+      letter-spacing: 2.4px;
+    }
+    &::before {
+      content: attr(title);
+      display: block;
+      font: normal normal 16px/30px Oswald;
+      letter-spacing: 0px;
+      color: #02ccfc;
+    }
+  }
+}
+
+article > div {
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  padding: 30px 20px;
+  & > * {
+    max-width: 900px;
+    margin: auto;
+  }
+  & > p {
+    width: fit-content;
+  }
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+    margin: 60px auto 30px;
+    li {
+      border: 1px solid #042842;
+      border-radius: 30px;
+      text-align: center;
+      background: transparent url("/img/arrow_circle_right_black.png") right 20px top 50% no-repeat
+        padding-box;
+      @media screen and (width <= 767px) {
+        width: 100%;
+      }
+      @media screen and (width >= 768px) {
+        width: 49%;
+      }
+
+      & > a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+article > section {
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  &::before {
+    display: block;
+    margin: 30px auto;
+    content: "";
+    background: #0a2843 0% 0% no-repeat padding-box;
+    width: 20px;
+    height: 20px;
+  }
+  & h3 {
+    margin: 30px auto;
+    text-align: center;
+    font: normal normal bold 28px/40px Noto Sans JP;
+    color: #0a2843;
+  }
+  & p,
+  & ul {
+    margin: 0 auto 2rem;
+  }
+  & ul > li {
+    display: list-item;
+    list-style-type: "―";
+    padding-left: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  & a {
+    color: #02ccfc;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

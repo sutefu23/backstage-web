@@ -13,6 +13,10 @@ body > article > header {
     letter-spacing: 7.2px;
     color: #0a2843;
     line-height: 1;
+    @media screen and (width <= 767px) {
+      font: normal normal bold 24px/35px Noto Sans JP;
+      letter-spacing: 2.4px;
+    }
     &::before {
       content: attr(title);
       display: block;

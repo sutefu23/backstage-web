@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import "ex/_common.pcss";
+
+body > article > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: transparent url("/img/price/header_image.png") 0% 0% / cover no-repeat padding-box;
+  & h2 {
+    text-align: center;
+    font: normal normal bold 36px/52px Noto Sans JP;
+    letter-spacing: 7.2px;
+    color: #0a2843;
+    line-height: 1;
+    @media screen and (width <= 767px) {
+      font: normal normal bold 24px/35px Noto Sans JP;
+      letter-spacing: 2.4px;
+    }
+    &::before {
+      content: attr(title);
+      display: block;
+      font: normal normal 16px/30px Oswald;
+      letter-spacing: 0px;
+      color: #02ccfc;
+    }
+  }
+}
+
+article > section {
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  & header,
+  & footer {
+    margin-top: 4rem;
+  }
+  & h3 {
+    display: none;
+  }
+  & h4 {
+    margin-top: 2rem;
+  }
+  & ul {
+    margin: 1.5rem auto;
+  }
+  & ul > li {
+    display: list-item;
+    list-style-type: "―";
+    padding-left: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  & a {
+    color: #02ccfc;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  & p.wide {
+    margin-top: 1rem;
+  }
+}
+
+article > section > address {
+  margin-top: 40px;
+  display: block;
+  padding: 2.5rem;
+  border: 1px solid #042842;
+  font: normal normal bold 14px/32px Noto Sans JP;
+  & dl {
+    & div {
+      display: flex;
+      flex-wrap: wrap;
+      & dt::after {
+        content: "：";
+      }
+    }
+  }
+}

@@ -187,7 +187,7 @@
     @media screen and (width <= 767px) {
       box-sizing: border-box;
       margin: 40px 1rem 0;
-      grid-template-columns: repeat(2, 220px);
+      grid-template-columns: repeat(2, 44vw);
       grid-template-rows: repeat(3, 1fr);
       gap: 52px 15px;
       grid-template-areas:
@@ -220,7 +220,7 @@
         font: normal normal 14px/30px Noto Sans JP;
         @media screen and (width <= 767px) {
           height: 120px;
-          width: 220px;
+          width: 44vw;
           margin: auto;
         }
         @media screen and (width >= 768px) {
@@ -341,7 +341,11 @@
       gap: 12px;
       margin-top: 40px;
       @media screen and (width <= 767px) {
+        gap: 2vw 2vw;
         justify-content: center;
+        & > li {
+          width: 44vw;
+        }
       }
     }
   }
@@ -423,6 +427,12 @@
     width: fit-content;
     margin: auto;
     text-align: center;
+    & p {
+      @media screen and (width <= 767px) {
+        width: 44vw;
+        margin: auto;
+      }
+    }
   }
   & #recommend_slide {
     position: relative;
@@ -501,7 +511,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 25px;
+    @media screen and (width <= 767px) {
+      gap: 4vw 5vw;
+      & > li {
+        width: 43vw;
+      }
+    }
     @media screen and (width >= 768px) {
       justify-content: space-between;
       gap: 10px;
@@ -548,6 +563,7 @@
     margin: 70px 0 20px;
     font: normal normal bold 36px/52px Noto Sans JP;
     @media screen and (width <= 767px) {
+      font: normal normal bold 24px/35px Noto Sans JP;
       margin-top: 200px;
     }
   }

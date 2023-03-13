@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const handler = (e: Event) => {
   if (!(e.target instanceof HTMLElement)) return;
-  
+
   const globalNav = document.getElementById("global_nav");
   const menuButton = document.querySelector("#open_menu > img");
   if (!(globalNav instanceof HTMLElement)) return;
@@ -27,6 +27,6 @@ const handler = (e: Event) => {
   } else {
     globalNav.classList.remove("open");
     menuButton.classList.remove("open");
-    menuButton.src = menuButton.dataset.orig ?? "";
+    if(menuButton.dataset.orig) menuButton.src = menuButton.dataset.orig;
   }
 };

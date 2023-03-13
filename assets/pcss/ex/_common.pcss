@@ -37,7 +37,7 @@ body > footer h2 {
     height: 40px;
     content: "";
     display: inline-block;
-    background: transparent url("/img/header_logo.png") 0% 0% no-repeat padding-box;
+    background: transparent url("/img/header_logo.png") 0% 0% / cover no-repeat padding-box;
     margin-right: 12px;
   }
   @media screen and (width <= 767px) {
@@ -51,12 +51,24 @@ body > header {
   height: 45px;
   padding: 12px 0;
   border-bottom: #e2dfe3 1px solid;
+  @media screen and (width <= 767px) {
+    height: 12vw;
+    padding: 3.2vw 0;
+    & > h1 {
+      font: normal normal 500 7.47vw/8.53vw Oswald;
+      height: 12vw;
+      &::before {
+        width: 8.53vw;
+        height: 7.47vw;
+      }
+    }
+  }
   @media screen and (width >= 768px) {
     min-width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 40px;
   }
 
   & nav {
@@ -87,44 +99,66 @@ body > header {
           top: 10vh;
           right: 0;
           margin: auto;
-          & a {
-            display: block;
-            width: 100%;
-            height: 100%;
-          }
+          // & a {
+          //   display: block;
+          //   width: 100%;
+          //   height: 100%;
+          // }
           & > li {
             color: #fff;
             text-align: center;
-            font: normal normal 4.8vw/16vw Noto Sans JP;
+            font: normal normal 4.8vw/6.93vw Noto Sans JP;
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2.67vw;
+            padding: 8.67vw 2.67vw;
             &#current_page {
               &::after {
                 width: 50px;
                 height: 2px;
                 background: #02ccfc 0% 0% no-repeat padding-box;
               }
+
+              // & a::after {
+              //   display: block;
+              //   content: "";
+              //   width: 50px;
+              //   height: 2px;
+              //   background: #02ccfc 0% 0% no-repeat padding-box;
+              //   margin: 0 auto auto;
+
+              // }
+            }
+            &#about_page {
+              & a::after {
+                width: 3.73vw;
+                height: 3.73vw;
+                background-image: url("/img/arrow_circle_right_2.svg");
+              }
             }
             & + li {
               border-top: 1px solid #4c7ca0;
             }
             & > p {
+              // margin-top: 8vw;
               text-align: center;
-              line-height: 1;
+              line-height: 2;
               & + ul {
                 text-align: left;
                 width: 125px;
-              }
-            }
-            & > ul {
-              margin-top: 2vw;
-              li {
-                font: normal normal 4.27vw/6.4vw Noto Sans JP;
+                margin-top: 2vw;
+                // margin-bottom: 8vw;
+                li {
+                  font: normal normal 4.27vw/6.4vw Noto Sans JP;
+                  margin-top: 5.07vw;
+                  & a::after {
+                    width: 3.73vw;
+                    height: 3.73vw;
+                  }
+                }
               }
             }
           }
@@ -132,7 +166,7 @@ body > header {
       }
 
       &#global_nav {
-        gap: 15px;
+        gap: 30px;
         & > li {
           color: #7a7c83;
           white-space: nowrap;
@@ -153,7 +187,8 @@ body > header {
               display: inline-block;
               width: 14px;
               height: 14px;
-              background: transparent url("/img/arrow_circle_right.png") 0% 0% no-repeat padding-box;
+              background: transparent url("/img/arrow_circle_right.svg") 0% 0% / cover no-repeat
+                padding-box;
               margin-left: 12px;
               position: relative;
               top: 2px;
@@ -196,7 +231,7 @@ body > header {
                 display: inline-block;
                 width: 14px;
                 height: 14px;
-                background: transparent url("/img/arrow_circle_right_2.png") 0% 0% no-repeat
+                background: transparent url("/img/arrow_circle_right_2.svg") 0% 0% / cover no-repeat
                   padding-box;
                 margin-left: 8px;
                 position: relative;
@@ -266,15 +301,19 @@ body > footer {
     text-decoration: underline;
   }
   & section {
-    margin-top: 70px;
-    padding: 90px 3rem 3rem;
+    max-width: 1000px;
+    margin: 70px auto 0;
+    padding: 90px 0 3rem;
     color: #fff;
     background: #0a2843 0% 0% no-repeat padding-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px 100px;
     position: relative;
+    @media screen and (width <= 990px) {
+      justify-content: center;
+    }
     @media screen and (width <= 767px) {
       padding: 50px 1rem;
       margin-top: 80px;
@@ -316,8 +355,34 @@ body > footer {
                 @media screen and (width <= 767px) {
                   font: normal normal 300 3.2vw/4.53vw Noto Sans JP;
                 }
+                @media screen and (width >= 768px) {
+                  padding-top: 5px;
+                  & > li {
+                    padding-bottom: 10px;
+                  }
+                }
               }
             }
+          }
+        }
+        a[href="/#whatis"],
+        a[href="/#merit_creator"],
+        a[href="/#merit_fan"] {
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: transparent url("/img/arrow_circle_right_2.svg") 0% 0% / cover no-repeat
+              padding-box;
+            margin-left: 8px;
+            position: relative;
+            top: 2px;
+            @media screen and (width <= 767px) {
+              width: 3.73vw;
+              height: 3.73vw;
+              }
+    
           }
         }
       }
@@ -326,7 +391,7 @@ body > footer {
         flex-wrap: wrap;
         width: 74px;
         height: fit-content;
-        @media screen and (width <= 1000px) {
+        @media screen and (width <= 999px) {
           flex-wrap: initial;
           width: fit-content;
         }
@@ -365,6 +430,18 @@ body > footer {
       @media screen and (width <= 767px) {
         display: none;
       }
+    }
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 calc(50% - 50vw);
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      background: #0a2843 0 0 no-repeat padding-box;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
   }
   & > p {

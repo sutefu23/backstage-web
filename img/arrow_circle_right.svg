@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="arrow_circle_right_black_24dp" transform="translate(13.828 0.472) rotate(90)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(-0.574 -0.273)">
+      <rect id="長方形_4" data-name="長方形 4" width="14" height="14" transform="translate(0.101 0.102)" fill="none"/>
+    </g>
+    <g id="グループ_2" data-name="グループ 2" transform="translate(1.083 1.157)">
+      <path id="パス_3" data-name="パス 3" d="M13.116,7.558a5.558,5.558,0,1,0-5.558,5.558A5.56,5.56,0,0,0,13.116,7.558Zm-5.558.556H5.335V7H7.558V5.335L9.781,7.558,7.558,9.781Z" transform="translate(-2 -2)" fill="#7a7c83"/>
+    </g>
+  </g>
+</svg>

@@ -10,8 +10,11 @@ html {
 }
 
 body {
-  font: normal normal 14px/30px Noto Sans JP;
+  font: normal normal 500 14px/30px Noto Sans JP;
   color: #131014;
+  @media screen and (width <= 767px) {
+    font: normal normal 500 3.2vw/6.93vw Noto Sans JP;
+  }
   & > article,
   > footer {
     @media screen and (width >= 768px) {
@@ -46,7 +49,7 @@ body > header {
   box-sizing: content-box;
   margin: auto;
   height: 45px;
-  padding: 18px 0;
+  padding: 12px 0;
   border-bottom: #e2dfe3 1px solid;
   @media screen and (width >= 768px) {
     min-width: 900px;
@@ -66,13 +69,14 @@ body > header {
       align-items: center;
       justify-content: space-between;
       @media screen and (width <= 767px) {
+        max-width: 95%;
         &#global_nav {
           display: none;
           &.open {
             display: flex;
           }
-          width: 90%;
-          height: 70vh;
+          width: 95%;
+          height: auto;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -80,21 +84,25 @@ body > header {
           z-index: 1500;
           background: #0a2843 0% 0% no-repeat padding-box;
           gap: 0;
-          bottom: 200px;
+          top: 10vh;
           right: 0;
-          left: 0;
           margin: auto;
+          & a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
           & > li {
             color: #fff;
             text-align: center;
-            font: normal normal 18px/26px Noto Sans JP;
+            font: normal normal 4.8vw/16vw Noto Sans JP;
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            line-height: 2;
+            padding: 2.67vw;
             &#current_page {
               &::after {
                 width: 50px;
@@ -109,9 +117,14 @@ body > header {
               text-align: center;
               line-height: 1;
               & + ul {
-                font: normal normal 16px/24px Noto Sans JP;
                 text-align: left;
                 width: 125px;
+              }
+            }
+            & > ul {
+              margin-top: 2vw;
+              li {
+                font: normal normal 4.27vw/6.4vw Noto Sans JP;
               }
             }
           }
@@ -238,9 +251,10 @@ ul#sp_nav_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 33px;
-    width: 325px;
-    max-width: 95%;
+    gap: 8.8vw;
+    width: 86.67vw;
+    min-width: 270px;
+    max-width: 450px;
     height: 73px;
     background: #0a2843 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 2px #0000004d;
@@ -270,13 +284,39 @@ body > footer {
     }
     & > ul {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       &#sitemap {
         gap: 40px;
-        & > li > ul {
-          & > li {
-            padding-bottom: 1rem;
-            & > ul {
-              font: normal normal 300 12px/17px Noto Sans JP;
+        @media screen and (width <= 767px) {
+          gap: 5vw;
+        }
+        & > li {
+          @media screen and (width <= 767px) {
+            width: 35vw;
+            &:last-of-type {
+              width: 100%;
+              & ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2vw 5vw;
+                & > li {
+                  width: 35vw;
+                  padding: 0;
+                }
+              }
+            }
+          }
+          & > ul {
+            & > li {
+              padding-bottom: 1rem;
+              & > ul {
+                font: normal normal 300 12px/17px Noto Sans JP;
+                @media screen and (width <= 767px) {
+                  font: normal normal 300 3.2vw/4.53vw Noto Sans JP;
+                }
+              }
             }
           }
         }

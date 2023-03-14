@@ -6,6 +6,7 @@ module.exports = {
     "postcss-import": {},
     "postcss-mixins": {},
     "postcss-nested": {},
+    "postcss-functions": {},
     "postcss-preset-env": {
       stage: 3,
       features: {

@@ -1,113 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>backstage</title>
-    <!-- <link rel="icon" href="favicon.ico" type="image/png"> -->
-    <link rel="stylesheet" href="/css/top.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@700&family=Oswald:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <script src="/js/top.js"></script>
-    <script src="/js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <h1><a href="/">BACKSTAGE</a></h1>
-      <nav>
-        <ul id="global_nav">
-          <li id="current_page"><a href="/">Home</a></li>
-          <li id="about_page"><a href="/#whatis">BACKSTAGEとは</a></li>
-          <li>
-            <p>利用方法</p>
-            <ul>
-              <li><a href="/#merit_creator">― クリエイター</a></li>
-              <li><a href="/#merit_fan">― ファン</a></li>
-            </ul>
-          </li>
-          <li><a href="#">よくある質問</a></li>
-          <li><a href="/price.html">料金</a></li>
-        </ul>
-        <ul id="member_nav">
-          <li class="button">
-            <a href="#"><img src="/img/header_register.png" alt="無料登録" /></a>
-          </li>
-          <li class="button">
-            <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>backstage</title>
+  <!-- <link rel="icon" href="favicon.ico" type="image/png"> -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@700&family=Oswald:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <script src="/js/top.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+</head>
 
-    <article>
-      <div id="top_slider">
-        <div id="main_slide" class="splide" role="group" aria-label="BACKSTAGE">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <picture>
-                  <source srcset="/img/top/top_slide_1pc.png" media="(min-width: 768px)" />
-                  <img
-                    src="/img/top/top_slide_1.png"
-                    alt="クリエイターの“本当”を知って活動を応援"
-                  />
-                </picture>
-              </li>
-              <li class="splide__slide">
-                <picture>
-                  <source srcset="/img/top/top_slide_2pc.png" media="(min-width: 768px)" />
-                  <img
-                    src="/img/top/top_slide_2.png"
-                    alt="クリエイターの“本当”を知って活動を応援"
-                  />
-                </picture>
-              </li>
-              <li class="splide__slide">
-                <picture>
-                  <source srcset="/img/top/top_slide_3pc.png" media="(min-width: 768px)" />
-                  <img
-                    src="/img/top/top_slide_3.png"
-                    alt="クリエイターの“本当”を知って活動を応援"
-                  />
-                </picture>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header>
+    <h1><a href="/">BACKSTAGE</a></h1>
+    <nav>
+      <ul id="global_nav">
+        <li id="current_page"><a href="/">Home</a></li>
+        <li id="about_page"><a href="/#whatis">BACKSTAGEとは</a></li>
+        <li>
+          <p>利用方法</p>
+          <ul>
+            <li><a href="/#merit_creator">― クリエイター</a></li>
+            <li><a href="/#merit_fan">― ファン</a></li>
+          </ul>
+        </li>
+        <li><a href="/#section_qanda">よくある質問</a></li>
+        <li><a href="/price.html">料金</a></li>
+      </ul>
+      <ul id="member_nav">
+        <li class="button">
+          <a href="#"><img src="/img/header_register.png" alt="無料登録" /></a>
+        </li>
+        <li class="button">
+          <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <div id="top_slider">
+      <div id="main_slide" class="splide" role="group" aria-label="BACKSTAGE">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <picture>
+                <source srcset="/img/top/top_slide_1pc.png" media="(min-width: 768px)" />
+                <source srcset="/img/top/top_slide_1@2x.png" media="(max-width: 767px)" />
+                <img src="/img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </picture>
+            </li>
+            <li class="splide__slide">
+              <picture>
+                <source srcset="/img/top/top_slide_2pc.png" media="(min-width: 768px)" />
+                <img src="/img/top/top_slide_2.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </picture>
+            </li>
+            <li class="splide__slide">
+              <picture>
+                <source srcset="/img/top/top_slide_3pc.png" media="(min-width: 768px)" />
+                <img src="/img/top/top_slide_3.png" alt="クリエイターの“本当”を知って活動を応援" />
+              </picture>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
-      <section id="section_backstage">
-        <p class="button">
-          <a href="#">
-            <picture>
-              <source
-                srcset="/img/top/top_button_1.png 1x, /img/top/top_button_1@2x.png 2x"
-                media="(min-width: 768px)"
-              />
-              <img
-                src="/img/top/top_button_1sp.png"
-                srcset="/img/top/top_button_1sp.png 1x, /img/top/top_button_1sp@2x.png 2x"
-                alt="クリエイターを探す"
-              />
-            </picture>
-          </a>
-        </p>
-        <h2 id="whatis">BACKSTAGEについて</h2>
-        <section id="section_about">
-          <div>
-            <h3>About</h3>
-            <pre>
+    <section id="section_backstage">
+      <p class="button">
+        <a href="#">
+          <picture>
+            <source srcset="/img/top/top_button_1.png 1x, /img/top/top_button_1@2x.png 2x" media="(min-width: 768px)" />
+            <source srcset="/img/top/top_button_1sp.png 1x, /img/top/top_button_1sp@2x.png 2x"
+              media="(max-width: 767px)" />
+            <img src="/img/top/top_button_1sp.png"
+              srcset="/img/top/top_button_1sp.png 1x, /img/top/top_button_1sp@2x.png 2x" alt="クリエイターを探す" />
+          </picture>
+        </a>
+      </p>
+      <h2 id="whatis">BACKSTAGEについて</h2>
+      <section id="section_about">
+        <div>
+          <h3>About</h3>
+          <pre>
 BACKSTAGEは、月単位のメンバーシップを通じ、
 普段誰にも見せない、どこにも出さないクリエイターさんの
 BACKSTAGE限定コンテンツが視聴、
@@ -121,420 +106,432 @@ BACKSTAGE限定コンテンツが視聴、
 この場で集めて活動の幅を
 広げていきましょう！
             </pre>
-          </div>
-          <ul class="images">
-            <li id="about_img_1"><img src="/img/top/top_about_1.png" alt="" /></li>
-            <li id="about_img_2"><img src="/img/top/top_about_2.png" alt="" /></li>
-            <li id="about_img_3"><img src="/img/top/top_about_3.png" alt="" /></li>
-          </ul>
-        </section>
-
-        <section id="section_features">
-          <h3>Features</h3>
-          <dl>
-            <div>
-              <dt>手軽に継続的な収益</dt>
-              <dd>
-                月額課金制のファンクラブなので、
-                あなたを支援してくれるファンがいれば収益化できます。
-              </dd>
-            </div>
-            <div>
-              <dt>すぐに収益化できる</dt>
-              <dd>
-                支援してくれるファンが1人でもいれば、 すぐに収益化することができます。
-                面倒な審査も必要ありません。
-              </dd>
-            </div>
-            <div>
-              <dt>分析ツールの活用</dt>
-              <dd>視聴者の地域や性別、視聴者数から課金の推移まで確認することができます。</dd>
-            </div>
-            <div>
-              <dt>コンテンツ販売</dt>
-              <dd>
-                ブログ・漫画やイラスト、オンライン交流会の先行チケット販売など、コンテンツ単位で販売することができます。
-              </dd>
-            </div>
-            <div>
-              <dt>初期費用・運用手数料0円</dt>
-              <dd>初期費用0円・運用手数料は、 ずっと0円でご利用いただけます。</dd>
-            </div>
-          </dl>
-        </section>
-      </section>
-
-      <section id="section_merit">
-        <h2>Merit</h2>
-        <ul class="tab-list">
-          <li id="merit_creator" class="active">クリエイター</li>
-          <li id="merit_fan">ファン</li>
+        </div>
+        <ul class="images">
+          <li id="about_img_1"><img src="/img/top/top_about_1.png" alt="" /></li>
+          <li id="about_img_2"><img src="/img/top/top_about_2.png" alt="" /></li>
+          <li id="about_img_3"><img src="/img/top/top_about_3.png" alt="" /></li>
         </ul>
-
-        <section class="tab-content show" id="creator_content">
-          <h3>クリエイター</h3>
-
-          <div>
-            <div>
-              <p>自身の活動をプランごとに自由に設定できるため、気軽に支援してもらえます。</p>
-              <p>
-                支援プランとは別に、動画・ライブ配信のチケットやオンラインサロンなどコンテンツ単体での販売もできるので、収益化する方法がたくさんあることもBACKSTAGEの魅力の一つです。
-              </p>
-            </div>
-
-            <p><img src="/img/top/top_creator_img.png" alt="" /></p>
-          </div>
-
-          <ul>
-            <li>
-              <img
-                src="/img/top/top_creator_1.png"
-                srcset="/img/top/top_creator_1.png 1x, /img/top/top_creator_1@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_2.png"
-                srcset="/img/top/top_creator_2.png 1x, /img/top/top_creator_2@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_3.png"
-                srcset="/img/top/top_creator_3.png 1x, /img/top/top_creator_3@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_4.png"
-                srcset="/img/top/top_creator_4.png 1x, /img/top/top_creator_4@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_5.png"
-                srcset="/img/top/top_creator_5.png 1x, /img/top/top_creator_5@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_6.png"
-                srcset="/img/top/top_creator_6.png 1x, /img/top/top_creator_6@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_7.png"
-                srcset="/img/top/top_creator_7.png 1x, /img/top/top_creator_7@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_creator_8.png"
-                srcset="/img/top/top_creator_8.png 1x, /img/top/top_creator_8@2x.png 2x"
-                alt=""
-              />
-            </li>
-          </ul>
-        </section>
-
-        <section class="tab-content" id="fan_content">
-          <h3>ファン</h3>
-          <div>
-            <div>
-              <p>
-                ファンはクリエイターが設定した料金によって、支援するプランを選ぶことができます。
-              </p>
-              <p>
-                他にも、動画やブログなどコンテンツ単位で購入することができるので、お気に入りのクリエイターをより深く知ることができます。
-              </p>
-            </div>
-            <p><img src="/img/top/top_fan_img.png" alt="" /></p>
-          </div>
-
-          <ul>
-            <li>
-              <img
-                src="/img/top/top_fan_1.png"
-                srcset="/img/top/top_fan_1.png 1x, /img/top/top_fan_1@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_fan_2.png"
-                srcset="/img/top/top_fan_2.png 1x, /img/top/top_fan_2@2x.png 2x"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/img/top/top_fan_3.png"
-                srcset="/img/top/top_fan_3.png 1x, /img/top/top_fan_3@2x.png 2x"
-                alt=""
-              />
-            </li>
-          </ul>
-        </section>
       </section>
 
-      <div id="creators_menu">
-        <section id="section_recommend">
-          <header>
-            <h2>Recommend</h2>
-          </header>
-          <section>
-            <header>
-              <h3>いちおしのクリエイター</h3>
-              <p>今人気急上昇中のおすすめのクリエイターです。</p>
-            </header>
-            <div id="recommend_slide" class="splide" role="group" aria-label="creators">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
-                  </li>
-                  <li class="splide__slide">
-                    <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </section>
-        <section id="section_search">
-          <header>
-            <h2>Search</h2>
-            <h3>クリエイターを探す</h3>
-            <p>あなただけのお気に入りのクリエイターを探して、 活動を応援しましょう！</p>
-          </header>
-          <ul>
-            <li>
-              <a href="#"
-                ><img
-                  src="/img/top/top_search_1.png"
-                  srcset="/img/top/top_search_1.png 1x, /img/top/top_search_1@2x.png 2x"
-                  alt="スポーツ選手"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/img/top/top_search_2.png"
-                  srcset="/img/top/top_search_2.png 1x, /img/top/top_search_2@2x.png 2x"
-                  alt="大道芸人"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/img/top/top_search_3.png"
-                  srcset="/img/top/top_search_3.png 1x, /img/top/top_search_3@2x.png 2x"
-                  alt="アイドル"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/img/top/top_search_4.png"
-                  srcset="/img/top/top_search_4.png 1x, /img/top/top_search_4@2x.png 2x"
-                  alt="料理研究家"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/img/top/top_search_5.png"
-                  srcset="/img/top/top_search_5.png 1x, /img/top/top_search_5@2x.png 2x"
-                  alt="歌手"
-              /></a>
-            </li>
-          </ul>
-          <p class="button">
-            <a href="#"
-              ><img
-                src="/img/top/top_button_2.png"
-                srcset="/img/top/top_button_2.png 1x, /img/top/top_button_2@2x.png 2x"
-                alt="クリエイター一覧を見る"
-            /></a>
-          </p>
-        </section>
-      </div>
-
-      <section id="section_price">
-        <header>
-          <h2>Price</h2>
-          <h3>気軽に無料で始められます</h3>
-          <p>会員登録から運用まで、全て無料でBACKSTAGEをご利用いただけます。</p>
-        </header>
-
-        <p class="image"><img src="/img/top/top_price.png" alt="" /></p>
-
-        <p class="button">
-          <a href="/price.html"
-            ><img
-              src="/img/top/top_button_3.png"
-              srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x"
-              alt="詳しくはこちら"
-          /></a>
-        </p>
-      </section>
-
-      <section id="section_qanda">
-        <h2>Q&A</h2>
-
+      <section id="section_features">
+        <h3>Features</h3>
         <dl>
           <div>
-            <dt>BACKSTAGEで活動を始めるのにお金はかかりますか？</dt>
-            <dd><p>BACKSTAGEは登録から運用まで全て無料で使用できます。</p></dd>
-          </div>
-          <div>
-            <dt>支援プランの金額設定は自由に行えますか？</dt>
+            <dt>手軽に継続的な収益</dt>
             <dd>
-              <p>月額200円（税抜）以上であれば、100円単位で変更できます。</p>
-              <p>ファンが支援を開始すると金額を変更できなくなるのでご注意ください。</p>
+              月額課金制のファンクラブなので、
+              あなたを支援してくれるファンがいれば収益化できます。
             </dd>
           </div>
+          <div>
+            <dt>すぐに収益化できる</dt>
+            <dd>
+              支援してくれるファンが1人でもいれば、 すぐに収益化することができます。
+              面倒な審査も必要ありません。
+            </dd>
+          </div>
+          <div>
+            <dt>分析ツールの活用</dt>
+            <dd>視聴者の地域や性別、視聴者数から課金の推移まで確認することができます。</dd>
+          </div>
+          <div>
+            <dt>コンテンツ販売</dt>
+            <dd>
+              ブログ・漫画やイラスト、オンライン交流会の先行チケット販売など、コンテンツ単位で販売することができます。
+            </dd>
+          </div>
+          <div>
+            <dt>初期費用・運用手数料0円</dt>
+            <dd>初期費用0円・運用手数料は、 ずっと0円でご利用いただけます。</dd>
+          </div>
         </dl>
+      </section>
+    </section>
+
+    <section id="section_merit">
+      <h2>Merit</h2>
+      <ul class="tab-list">
+        <li id="merit_creator" class="active">クリエイター</li>
+        <li id="merit_fan">ファン</li>
+      </ul>
+
+      <section class="tab-content show" id="creator_content">
+        <h3>クリエイター</h3>
+
+        <div>
+          <div>
+            <p>自身の活動をプランごとに自由に設定できるため、気軽に支援してもらえます。</p>
+            <p>
+              支援プランとは別に、動画・ライブ配信のチケットやオンラインサロンなどコンテンツ単体での販売もできるので、収益化する方法がたくさんあることもBACKSTAGEの魅力の一つです。
+            </p>
+          </div>
+
+          <img src="/img/top/top_creator_img.png" />
+        </div>
+
+        <ul>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_1.png 1x, /img/top/top_creator_1@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_1.png"
+                srcset="/img/top/top_creator_1.png 1x, /img/top/top_creator_1@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_2.png 1x, /img/top/top_creator_2@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_2.png"
+                srcset="/img/top/top_creator_2.png 1x, /img/top/top_creator_2@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_3.png 1x, /img/top/top_creator_3@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_3.png"
+                srcset="/img/top/top_creator_3.png 1x, /img/top/top_creator_3@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_4.png 1x, /img/top/top_creator_4@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_4.png"
+                srcset="/img/top/top_creator_4.png 1x, /img/top/top_creator_4@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_5.png 1x, /img/top/top_creator_5@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_5.png"
+                srcset="/img/top/top_creator_5.png 1x, /img/top/top_creator_5@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_6.png 1x, /img/top/top_creator_6@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_6.png"
+                srcset="/img/top/top_creator_6.png 1x, /img/top/top_creator_6@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_7.png 1x, /img/top/top_creator_7@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_7.png"
+                srcset="/img/top/top_creator_7.png 1x, /img/top/top_creator_7@2x.png 2x" alt="" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="/img/top/top_creator_8.png 1x, /img/top/top_creator_8@2x.png 2x"
+                media="(max-width:767px)" />
+              <img src="/img/top/top_creator_8.png"
+                srcset="/img/top/top_creator_8.png 1x, /img/top/top_creator_8@2x.png 2x" alt="" />
+            </picture>
+          </li>
+        </ul>
+      </section>
+
+      <section class="tab-content" id="fan_content">
+        <h3>ファン</h3>
+        <div>
+          <div>
+            <p>
+              ファンはクリエイターが設定した料金によって、支援するプランを選ぶことができます。
+            </p>
+            <p>
+              他にも、動画やブログなどコンテンツ単位で購入することができるので、お気に入りのクリエイターをより深く知ることができます。
+            </p>
+          </div>
+          <img src="/img/top/top_fan_img.png" alt="" />
+        </div>
+
+        <ul>
+          <li>
+            お気に入りクリエイターの<br>
+            限定コンテンツが楽しめる！
+          </li>
+          <li>
+            お気に入りクリエイターを<br>
+            直接支援できる！
+          </li>
+          <li>
+            お気に入りクリエイターの<br>
+            舞台裏、特別コミュニティに<br>
+            参加できる！
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <div id="creators_menu">
+      <section id="section_recommend">
+        <header>
+          <h2>Recommend</h2>
+        </header>
+        <section>
+          <header>
+            <h3>いちおしのクリエイター</h3>
+            <p>今人気急上昇中の<br class="sp">おすすめのクリエイターです。</p>
+          </header>
+          <div id="recommend_slide" class="splide" role="group" aria-label="creators">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_1.png" alt="名前" /></a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#"><img src="/img/top/top_recommend_2.png" alt="名前" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="section_search">
+        <header>
+          <h2>Search</h2>
+          <h3>クリエイターを探す</h3>
+          <p>あなただけのお気に入りのクリエイターを探して、 <br class="sp">活動を応援しましょう！</p>
+        </header>
+        <ul>
+          <li>
+            <a href="#">
+              <picture>
+                <source media="(max-width:767px)" srcset="/img/top/top_search_1.png 1x, /img/top/top_search_1@2x.png 2x" />
+                <img src="/img/top/top_search_1.png"
+                  srcset="/img/top/top_search_1.png 1x, /img/top/top_search_1@2x.png 2x" alt="スポーツ選手" />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <picture>
+                <source media="(max-width:767px)" srcset="/img/top/top_search_2.png 1x, /img/top/top_search_2@2x.png 2x" />
+                <img src="/img/top/top_search_2.png"
+                  srcset="/img/top/top_search_2.png 1x, /img/top/top_search_2@2x.png 2x" alt="大道芸人" />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <picture>
+                <source media="(max-width:767px)" srcset="/img/top/top_search_3.png 1x, /img/top/top_search_3@2x.png 2x" />
+                <img src="/img/top/top_search_3.png"
+                  srcset="/img/top/top_search_3.png 1x, /img/top/top_search_3@2x.png 2x" alt="アイドル" />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <picture>
+                <source media="(max-width:767px)" srcset="/img/top/top_search_4.png 1x, /img/top/top_search_4@2x.png 2x" />
+                <img src="/img/top/top_search_4.png"
+                  srcset="/img/top/top_search_4.png 1x, /img/top/top_search_4@2x.png 2x" alt="料理研究家" />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <picture>
+                <source media="(max-width:767px)" srcset="/img/top/top_search_5.png 1x, /img/top/top_search_5@2x.png 2x" />
+                <img src="/img/top/top_search_5.png"
+                  srcset="/img/top/top_search_5.png 1x, /img/top/top_search_5@2x.png 2x" alt="歌手" />
+              </picture>
+            </a>
+          </li>
+        </ul>
         <p class="button">
-          <a href="#"
-            ><img
-              src="/img/top/top_button_3.png"
-              srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x"
-              alt="詳しくはこちら"
-          /></a>
+          <a href="#">
+            <picture>
+              <source media="(max-width:767px)" srcset="/img/top/top_button_2.png 1x, /img/top/top_button_2@2x.png 2x" />
+              <img src="/img/top/top_button_2.png"
+              srcset="/img/top/top_button_2.png 1x, /img/top/top_button_2@2x.png 2x" alt="クリエイター一覧を見る" /></a>
+            </picture>
+          </a>
         </p>
       </section>
-    </article>
+    </div>
 
-    <ul id="sp_nav_button">
-      <li>
-        <a href="#"><img src="/img/nav_sp_1.png" alt="register" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="/img/nav_sp_2.png" alt="login" /></a>
-      </li>
-      <li id="open_menu">
-        <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
-      </li>
-      <li>
-        <a href="#"><img src="/img/nav_sp_4.png" alt="page top" /></a>
-      </li>
-    </ul>
+    <section id="section_price">
+      <header>
+        <h2>Price</h2>
+        <h3>気軽に無料で始められます</h3>
+        <p>会員登録から運用まで、全て無料でBACKSTAGEをご利用いただけます。</p>
+      </header>
 
-    <footer>
-      <section>
-        <h2>BACKSTAGE</h2>
-        <ul id="sitemap">
-          <li>
-            <ul>
-              <li><a href="/#whatis">BACKSTAGEとは</a></li>
-              <li>
-                利用方法
-                <ul>
-                  <li><a href="/#merit_creator">― クリエイター</a></li>
-                  <li><a href="/#merit_fan">― ファン</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><a href="#">よくある質問</a></li>
-              <li><a href="/price.html">料金</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><a href="/guide.html">ガイドライン</a></li>
-              <li><a href="/terms.html">利用規約</a></li>
-              <li><a href="/transaction.html">特定商取引法に基づく表示</a></li>
-              <li><a href="/privacy.html">プライバシーポリシー</a></li>
-            </ul>
-          </li>
-        </ul>
+      <p class="image"><img src="/img/top/top_price.png" alt="" /></p>
 
-        <ul id="sns">
-          <li>
-            <a href="#"><img src="/img/icon_sns_1.png" alt="instagram" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/img/icon_sns_2.png" alt="twitter" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/img/icon_sns_3.png" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/img/icon_sns_4.png" alt="youtube" /></a>
-          </li>
-        </ul>
+      <p class="button">
+        <a href="/price.html">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x" />
+            <img src="/img/top/top_button_3.png"
+            srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x" alt="詳しくはこちら" />
+          </picture>
+          
+          </a>
+      </p>
+    </section>
 
-        <ul id="member_foot">
-          <li>
-            <a href="#">
-              <picture>
-                <source srcset="/img/footer_register.png" media="(min-width: 768px)" />
-                <img src="/img/header_register.png" alt="無料登録" />
-              </picture>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <picture>
-                <source srcset="/img/footer_login.png" media="(min-width: 768px)" />
-                <img src="/img/header_login.png" alt="ログイン" />
-              </picture>
-            </a>
-          </li>
-        </ul>
+    <section id="section_qanda">
+      <h2>Q&A</h2>
 
-        <p id="gotop">
-          <a href="#"><img src="/img/gotop.png" alt="go to pagetop" /></a>
-        </p>
-      </section>
-      <p>©2023 BACKSTAGE.</p>
-    </footer>
-    <script>
-      new Splide("#main_slide", { type: "fade", arrows: false }).mount();
-      new Splide("#recommend_slide", {
-        autoplay: true,
-        perPage: 2.5,
-        perMove: 1,
-        rewind: true,
-        pagination: false,
-        arrowPath:
-          "M36.738,19.369A17.369,17.369,0,1,0,19.369,36.738,17.375,17.375,0,0,0,36.738,19.369ZM19.369,21.106H12.421V17.632h6.948V12.421l6.948,6.948-6.948,6.948Z",
-        breakpoints: {
-          768: {
-            perPage: 1,
-          },
+      <dl>
+        <div>
+          <dt>BACKSTAGEで活動を始めるのにお金はかかりますか？</dt>
+          <dd>
+            <p>BACKSTAGEは登録から運用まで全て無料で使用できます。</p>
+          </dd>
+        </div>
+        <div>
+          <dt>支援プランの金額設定は自由に行えますか？</dt>
+          <dd>
+            <p>月額200円（税抜）以上であれば、100円単位で変更できます。<br>
+              ファンが支援を開始すると金額を変更できなくなるのでご注意ください。</p>
+          </dd>
+        </div>
+      </dl>
+      <p class="button">
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x" />
+            <img src="/img/top/top_button_3.png"
+            srcset="/img/top/top_button_3.png 1x, /img/top/top_button_3@2x.png 2x" alt="詳しくはこちら" />
+          </picture>
+          </a>
+      </p>
+    </section>
+  </article>
+
+  <ul id="sp_nav_button">
+    <li>
+      <a href="#"><img src="/img/nav_sp_1.png" alt="register" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="/img/nav_sp_2.png" alt="login" /></a>
+    </li>
+    <li id="open_menu">
+      <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
+    </li>
+    <li>
+      <a href="#"><img src="/img/nav_sp_4.png" alt="page top" /></a>
+    </li>
+  </ul>
+
+  <footer>
+    <section>
+      <h2>BACKSTAGE</h2>
+      <ul id="sitemap">
+        <li>
+          <ul>
+            <li><a href="/#whatis">BACKSTAGEとは</a></li>
+            <li>
+              利用方法
+              <ul>
+                <li><a href="/#merit_creator">― クリエイター</a></li>
+                <li><a href="/#merit_fan">― ファン</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="/price.html">料金</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="/guide.html">ガイドライン</a></li>
+            <li><a href="/terms.html">利用規約</a></li>
+            <li><a href="/transaction.html">特定商取引法に基づく表示</a></li>
+            <li><a href="/privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul id="sns">
+        <li>
+          <a href="#"><img src="/img/icon_sns_1.svg" alt="instagram" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icon_sns_2.svg" alt="twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icon_sns_3.svg" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icon_sns_4.svg" alt="youtube" /></a>
+        </li>
+      </ul>
+
+      <ul id="member_foot">
+        <li>
+          <a href="#">
+            <picture>
+              <source srcset="/img/footer_register.png" media="(min-width: 768px)" />
+              <img src="/img/footer_register.svg" alt="無料登録" />
+            </picture>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <picture>
+              <source srcset="/img/footer_login.png" media="(min-width: 768px)" />
+              <img src="/img/footer_login.svg" alt="ログイン" />
+            </picture>
+          </a>
+        </li>
+      </ul>
+
+      <p id="gotop">
+        <a href="#"><img src="/img/gotop.png" alt="go to pagetop" /></a>
+      </p>
+    </section>
+    <p>©2023 BACKSTAGE.</p>
+  </footer>
+  <script>
+    new Splide("#main_slide", { type: "fade", arrows: false }).mount();
+    new Splide("#recommend_slide", {
+      autoplay: true,
+      perPage: 2.5,
+      perMove: 1,
+      rewind: true,
+      pagination: false,
+      arrowPath:
+        "M36.738,19.369A17.369,17.369,0,1,0,19.369,36.738,17.375,17.375,0,0,0,36.738,19.369ZM19.369,21.106H12.421V17.632h6.948V12.421l6.948,6.948-6.948,6.948Z",
+      breakpoints: {
+        768: {
+          perPage: 1,
         },
-      }).mount();
-    </script>
-  </body>
+      },
+    }).mount();
+  </script>
+</body>
+
 </html>

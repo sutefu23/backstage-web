@@ -23,7 +23,14 @@ body {
     margin: auto;
   }
 }
-
+.sp{
+  @media screen and (width <= 767px) {
+    display: block;
+  }
+  @media screen and (width >= 768px) {
+    display: none;
+  }
+}
 body > header h1,
 body > footer h2 {
   width: fit-content;
@@ -279,7 +286,7 @@ ul#sp_nav_button {
   }
 }
 body > footer {
-  overflow:hidden;
+  overflow: hidden;
   & a:hover {
     text-decoration: underline;
   }
@@ -298,8 +305,8 @@ body > footer {
       justify-content: center;
     }
     @media screen and (width <= 767px) {
-      padding: 50px 1rem;
-      margin-top: 80px;
+      padding: 13.33vw 6.67vw;
+      margin-top: calc(100vw / 375 * 40);
     }
     & h2 {
       color: #fff;
@@ -311,7 +318,7 @@ body > footer {
       &#sitemap {
         gap: 40px;
         @media screen and (width <= 767px) {
-          gap: 5vw;
+          gap: 5vw 16vw;
         }
         & > li {
           @media screen and (width <= 767px) {
@@ -321,7 +328,7 @@ body > footer {
               & ul {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-between;
                 gap: 2vw 5vw;
                 & > li {
                   width: 35vw;
@@ -333,10 +340,14 @@ body > footer {
           & > ul {
             & > li {
               padding-bottom: 1rem;
+              font-weight: normal;
               & > ul {
                 font: normal normal 300 12px/17px Noto Sans JP;
                 @media screen and (width <= 767px) {
                   font: normal normal 300 3.2vw/4.53vw Noto Sans JP;
+                  & li {
+                    margin-top: 2.4vw;
+                  }
                 }
                 @media screen and (width >= 768px) {
                   padding-top: 5px;
@@ -361,11 +372,11 @@ body > footer {
             margin-left: 8px;
             position: relative;
             top: 2px;
+            transform: rotate(180deg);
             @media screen and (width <= 767px) {
               width: 3.73vw;
               height: 3.73vw;
-              }
-    
+            }
           }
         }
       }
@@ -382,6 +393,14 @@ body > footer {
         & li {
           width: 32px;
           height: 32px;
+          @media screen and (width <= 767px) {
+            width: 10.66vw;
+            height: 10.66vw;
+            img{
+              width: 10.66vw;
+              height: 10.66vw;
+            }
+          }
         }
       }
     }
@@ -392,8 +411,22 @@ body > footer {
       left: 0;
       margin: auto;
       width: fit-content;
+      height: fit-content;
       gap: 20px;
       z-index: 100;
+      img {
+        display: block;
+      }
+      @media screen and (width <= 767px) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: calc(100vw / 375 * 325);
+        top: calc(100vw / 375 * -20);
+        gap:calc(100vw / 375 * 17);
+        img{
+          width: calc(100vw / 375 * 154);
+        }
+      }
     }
     & #gotop {
       position: absolute;
@@ -428,10 +461,14 @@ body > footer {
     }
   }
   & > p {
-    color: var(--unnamed-color-0a2843);
     text-align: center;
     font: normal normal 12px/17px Oswald;
     color: #0a2843;
     padding: 0.5rem;
+    background-color: #fff;
+    @media screen and (width <= 767px) {
+      font-size: calc(100vw / 375 * 12);
+      line-height: calc(100vw / 375 * 17);
+    }
   }
 }

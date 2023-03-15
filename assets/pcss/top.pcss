@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import "ex/_common.pcss";
 
+.fadeIn {
+  opacity: 0;
+  &.show {
+    opacity: 1;
+    transition: opacity 0.5s var(--data-delay) ease-in-out;
+  }
+}
+
 #top_slider {
   & #main_slide {
     & img {
@@ -509,8 +517,8 @@
   }
   .whiteout{
     @media screen and (width <= 767px) {
-      bottom: 23.4vw;
       left: -7vw;
+      top: 88vw;
     }
     @media screen and (width >= 768px) {
       left: -230px;

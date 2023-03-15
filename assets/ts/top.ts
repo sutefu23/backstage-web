@@ -44,3 +44,27 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("DOMContentLoaded", changeHash);
   window.addEventListener("hashchange", changeHash);
 });
+
+
+// 画面内に要素が入ったかどうかを判定する isNoMatterSide 両側が切れていても上下入っていればフェードする
+function isElementInViewport(element: Element, isNoMatterSide:boolean = false) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    (isNoMatterSide || (rect.left >= 0 && rect.right <= (window.innerWidth || document.documentElement.clientWidth))
+    )
+  );
+}
+
+window.addEventListener('scroll', () => {
+  const targetElements = document.querySelectorAll('.fadeIn');
+  if(!targetElements) return
+  targetElements.forEach((elm)  => {
+    const isNoMatterSide = elm.classList.contains('fadeNoMatterSide')
+    if (isElementInViewport(elm, isNoMatterSide) && !elm.classList.contains('show')) {
+      elm.classList.add('show');
+    }
+  
+  })
+});

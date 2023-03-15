@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="325" height="50" viewBox="0 0 325 50">
+  <g id="グループ_292" data-name="グループ 292" transform="translate(-25 -334)">
+    <rect id="長方形_114" data-name="長方形 114" width="325" height="50" rx="25" transform="translate(25 334)" fill="#05ba75"/>
+    <g id="グループ_192" data-name="グループ 192" transform="translate(-20 -10)">
+      <g id="グループ_191" data-name="グループ 191" transform="translate(40 -134)">
+        <text id="クリエイターを探す" transform="translate(93 510)" fill="#fff" font-size="16" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700"><tspan x="0" y="0">クリエイターを探す</tspan></text>
+        <g id="search_black_24dp" transform="translate(60 491)">
+          <path id="パス_5" data-name="パス 5" d="M0,0H24.029V24.029H0Z" fill="none"/>
+          <path id="パス_6" data-name="パス 6" d="M15.515,14.013h-.791l-.28-.27a6.518,6.518,0,1,0-.7.7l.27.28v.791l5.006,5,1.492-1.492Zm-6.007,0a4.505,4.505,0,1,1,4.505-4.505A4.5,4.5,0,0,1,9.508,14.013Z" transform="translate(0.004 0.004)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="arrow_circle_right_black_24dp" transform="translate(314.206 357.592) rotate(90)">
+        <g id="グループ_1" data-name="グループ 1" transform="translate(-0.502 -0.704)">
+          <rect id="長方形_4" data-name="長方形 4" width="24" height="24" transform="translate(-0.09 -0.09)" fill="none"/>
+        </g>
+        <g id="グループ_2" data-name="グループ 2" transform="translate(2.134 2.092)">
+          <path id="パス_3" data-name="パス 3" d="M20.388,11.194a9.194,9.194,0,1,0-9.194,9.194A9.2,9.2,0,0,0,20.388,11.194Zm-9.194.919H7.516V10.274h3.678V7.516l3.678,3.678-3.678,3.678Z" transform="translate(-2 -2)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

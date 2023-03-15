@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <g id="長方形_2" data-name="長方形 2" fill="#f7f7f7" stroke="#e3e4e5" stroke-width="1">
+    <rect width="120" height="40" rx="4" stroke="none"/>
+    <rect x="0.5" y="0.5" width="119" height="39" rx="3.5" fill="none"/>
+  </g>
+  <g id="グループ_6" data-name="グループ 6" transform="translate(-1063 -20)">
+    <text id="ログイン" transform="translate(1093 46)" font-size="14" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700"><tspan x="0" y="0">ログイン</tspan></text>
+    <g id="lock_black_24dp" transform="translate(1073 31)">
+      <path id="パス_1" data-name="パス 1" d="M0,0H18V18H0Z" fill="none"/>
+      <path id="パス_2" data-name="パス 2" d="M14.5,6.249h-.75v-1.5a3.749,3.749,0,1,0-7.5,0v1.5H5.5A1.5,1.5,0,0,0,4,7.749v7.5a1.5,1.5,0,0,0,1.5,1.5h9a1.5,1.5,0,0,0,1.5-1.5v-7.5A1.5,1.5,0,0,0,14.5,6.249ZM10,13a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,10,13Zm2.324-6.749H7.674v-1.5a2.324,2.324,0,0,1,4.649,0Z" transform="translate(-1.001 -0.25)"/>
+    </g>
+  </g>
+  <g id="arrow_circle_right_black_24dp" transform="translate(95.574 10.273)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(-0.319 -0.273)">
+      <rect id="長方形_4" data-name="長方形 4" width="20" height="20" transform="translate(-0.254)" fill="none"/>
+    </g>
+    <g id="グループ_2" data-name="グループ 2" transform="translate(1.759 1.74)">
+      <path id="パス_3" data-name="パス 3" d="M17.653,9.827a7.827,7.827,0,1,0-7.827,7.827A7.83,7.83,0,0,0,17.653,9.827Zm-7.827.783H6.7V9.044H9.827V6.7l3.131,3.131L9.827,12.957Z" transform="translate(-2 -2)"/>
+    </g>
+  </g>
+</svg>

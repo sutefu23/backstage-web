@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="57" viewBox="0 0 40 57">
+  <g id="グループ_298" data-name="グループ 298" transform="translate(-58 -6191)">
+    <g id="グループ_247" data-name="グループ 247" transform="translate(-60 -101)">
+      <rect id="長方形_102" data-name="長方形 102" width="40" height="40" rx="4" transform="translate(118 6292)" fill="#ff6565"/>
+      <g id="person_add_alt_1_black_24dp" transform="translate(122.35 6296.67)">
+        <g id="グループ_3" data-name="グループ 3" transform="translate(0.32 0)">
+          <rect id="長方形_5" data-name="長方形 5" width="30" height="30" transform="translate(0.33 0.329)" fill="none"/>
+        </g>
+        <g id="グループ_4" data-name="グループ 4" transform="translate(1.044 5.206)">
+          <path id="パス_4" data-name="パス 4" d="M16.618,9.206a5.206,5.206,0,1,0-5.206,5.206A5.2,5.2,0,0,0,16.618,9.206Zm2.6,2.6v2.6h3.9v3.9h2.6v-3.9h3.9v-2.6h-3.9V7.9h-2.6v3.9ZM1,22.221v2.6H21.824v-2.6c0-3.462-6.937-5.206-10.412-5.206S1,18.759,1,22.221Z" transform="translate(-1 -4)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <text id="Register" transform="translate(78 6245)" fill="#fff" font-size="12" font-family="Oswald-Regular, Oswald"><tspan x="-18.168" y="0">Register</tspan></text>
+  </g>
+</svg>

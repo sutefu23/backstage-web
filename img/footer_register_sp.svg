@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="40" viewBox="0 0 154 40">
+  <g id="グループ_290" data-name="グループ 290" transform="translate(-25 -6275)">
+    <rect id="長方形_138" data-name="長方形 138" width="154" height="40" rx="4" transform="translate(25 6275)" fill="#ff6565"/>
+    <g id="グループ_221" data-name="グループ 221" transform="translate(-4 77)">
+      <g id="arrow_circle_right_black_24dp" transform="translate(153.714 6210.577)">
+        <g id="グループ_1" data-name="グループ 1" transform="translate(0.343 0.423)">
+          <rect id="長方形_4" data-name="長方形 4" width="14" height="14" transform="translate(-0.057 0)" fill="none"/>
+        </g>
+        <g id="グループ_2" data-name="グループ 2" transform="translate(2.13 1.569)">
+          <path id="パス_3" data-name="パス 3" d="M13.033,7.517a5.517,5.517,0,1,0-5.517,5.517A5.519,5.519,0,0,0,13.033,7.517Zm-5.517.552H5.31v-1.1H7.517V5.31L9.723,7.517,7.517,9.723Z" transform="translate(-2 -2)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="グループ_219" data-name="グループ 219" transform="translate(-391 624)">
+        <text id="無料登録" transform="translate(471 5601)" fill="#fff" font-size="16" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700"><tspan x="0" y="0">無料登録</tspan></text>
+        <g id="person_add_alt_1_black_24dp" transform="translate(435.783 5581.083)">
+          <g id="グループ_3" data-name="グループ 3" transform="translate(0.216 -0.082)">
+            <rect id="長方形_5" data-name="長方形 5" width="26" height="26" transform="translate(0 0)" fill="none"/>
+          </g>
+          <g id="グループ_4" data-name="グループ 4" transform="translate(0.727 4.452)">
+            <path id="パス_4" data-name="パス 4" d="M14.244,8.415a4.415,4.415,0,1,0-4.415,4.415A4.413,4.413,0,0,0,14.244,8.415Zm2.207,2.207v2.207h3.311V16.14h2.207V12.829H25.28V10.622H21.969V7.311H19.762v3.311ZM1,19.451v2.207H18.658V19.451c0-2.936-5.882-4.415-8.829-4.415S1,16.515,1,19.451Z" transform="translate(-1 -4)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

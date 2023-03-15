@@ -21,7 +21,7 @@
       <h1><a href="/">BACKSTAGE</a></h1>
       <nav>
         <ul id="global_nav">
-          <li><a href="/">Home</a></li>
+          <li id="current_page"><a href="/">Home</a></li>
           <li id="about_page"><a href="/#whatis">BACKSTAGEとは</a></li>
           <li>
             <p>利用方法</p>
@@ -35,10 +35,10 @@
         </ul>
         <ul id="member_nav">
           <li class="button">
-            <a href="#"><img src="/img/header_register.png" alt="無料登録" /></a>
+            <a href="#"><img src="/img/header_register.svg" alt="無料登録" /></a>
           </li>
           <li class="button">
-            <a href="#"><img src="/img/header_login.png" alt="ログイン" /></a>
+            <a href="#"><img src="/img/header_login.svg" alt="ログイン" /></a>
           </li>
         </ul>
       </nav>
@@ -204,19 +204,18 @@
 
     <ul id="sp_nav_button">
       <li>
-        <a href="#"><img src="/img/nav_sp_1.png" alt="register" /></a>
+        <a href="#"><img src="/img/nav_sp_1.svg" alt="register" /></a>
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_2.png" alt="login" /></a>
+        <a href="#"><img src="/img/nav_sp_2.svg" alt="login" /></a>
       </li>
       <li id="open_menu">
-        <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
+        <img src="/img/nav_sp_3.svg" data-src="/img/nav_sp_3_on.svg" alt="menu" />
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_4.png" alt="page top" /></a>
+        <a href="#"><img src="/img/nav_sp_4.svg" alt="page top" /></a>
       </li>
     </ul>
-
     <footer>
       <section>
         <h2>BACKSTAGE</h2>
@@ -268,7 +267,8 @@
           <li>
             <a href="#">
               <picture>
-                <source srcset="/img/footer_register.png" media="(min-width: 768px)" />
+                <source srcset="/img/footer_register.svg" media="(min-width: 768px)" />
+                <source srcset="/img/footer_register_sp.svg" media="(max-width: 767px)" />
                 <img src="/img/footer_register.svg" alt="無料登録" />
               </picture>
             </a>
@@ -277,6 +277,7 @@
             <a href="#">
               <picture>
                 <source srcset="/img/footer_login.png" media="(min-width: 768px)" />
+                <source srcset="/img/footer_login_sp.svg" media="(max-width: 767px)" />
                 <img src="/img/footer_login.svg" alt="ログイン" />
               </picture>
             </a>
@@ -284,7 +285,7 @@
         </ul>
   
         <p id="gotop">
-          <a href="#"><img src="/img/gotop.png" alt="go to pagetop" /></a>
+          <a href="#"><img src="/img/gotop.svg" alt="go to pagetop" /></a>
         </p>
       </section>
       <p>©2023 BACKSTAGE.</p>

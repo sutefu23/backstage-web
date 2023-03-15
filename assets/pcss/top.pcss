@@ -43,10 +43,24 @@
     padding-bottom: 2.13vw;
   }
 }
-
+.whiteout{
+  position: absolute;
+  font-size: 110px;
+  font-family: Oswald, "Oswald", sans-serif;
+  font-weight: 200;
+  color: transparent;
+  z-index: -1;
+  text-stroke: 1px #ddd;
+  -webkit-text-stroke: 1px #ddd;
+  @media screen and (width <= 767px) {
+    font-size: calc(100vw / 375 * 80);
+  }
+}
 #section_backstage {
   padding-top: 40px;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
   @media screen and (width <= 767px) {
     padding-top: 17.07vw;
     background: transparent url("/img/top/top_bg_1_sp.png") 0% 0% / cover no-repeat padding-box;
@@ -162,22 +176,14 @@
     }
   }
 
-  &::before {
-    content: "";
-    display: block;
-    background: transparent url("/img/top/About.png") 0% 0% / cover no-repeat padding-box;
-    position: absolute;
+  .whiteout {
     @media screen and (width <= 767px) {
-      width: 40.4vw;
-      height: 31.47vw;
-      top: -47.5vw;
+      top: -37.5vw;
       right: 0;
     }
     @media screen and (width >= 768px) {
-      width: 212px;
-      height: 165px;
-      top: -224px;
-      right: -50px;
+      right: -38px;
+      top: -155px;
     }
   }
 }
@@ -192,22 +198,14 @@
     margin-top: -3vw;
     padding-bottom: calc(100vw/ 375 * 38);
   }
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 311px;
-    height: 165px;
-    background: transparent url("/img/top/Features.png") 0% 0% / cover no-repeat padding-box;
-    position: absolute;
+  .whiteout{
     @media screen and (width <= 767px) {
-      top: -14.07vw;
+      top: -1.07vw;
       right: 0;
-      width: 59.73vw;
-      height: 31.47vw;
     }
     @media screen and (width >= 768px) {
-      top: 40px;
-      left: -40px;
+      left: -45px;
+      top: 106px;
     }
   }
   & h3 {
@@ -354,7 +352,14 @@
     margin: calc(100vw / 375 * 158) auto calc(100vw / 375 * 40) ;
     padding: 0 6.667vw;
   }
-
+  .whiteout{
+    right: 63px;
+    top: -112px;
+    @media screen and (width <= 767px) {
+      right: 18.5vw;
+      top: -28vw;
+    }
+  }
   & h2 {
     @mixin rotate;
     margin: 0 -15px 76px auto;
@@ -364,23 +369,6 @@
     @media screen and (width <= 767px) {
       top: -27.72vw;
       right: 5.5vw;
-    }
-    &::before {
-      content: "";
-      display: inline-block;
-      transform: rotate(-0.25turn);
-      width: 195px;
-      height: 165px;
-      background: transparent url("/img/top/Merit.png") 0% 0% / cover no-repeat padding-box;
-      position: absolute;
-      top: 75px;
-      left: -75px;
-      @media screen and (width <= 767px) {
-        width: 37.33vw;
-        height: 31.47vw;
-        top: 17vw;
-        left: -13vw;
-      }
     }
   }
   & > ul {
@@ -485,6 +473,8 @@
 
 #creators_menu {
   overflow: hidden;
+  position: relative;
+  z-index: 0;
   @media screen and (width <= 767px) {
     padding: 0 6.67vw;
     background: transparent url("/img/top/top_bg_2_sp.png") 0% 0% / cover no-repeat padding-box;
@@ -517,22 +507,14 @@
     padding-top: calc(100vw / 375 * 39);
     padding-bottom: 26.6vw;    
   }
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 446px;
-    height: 165px;
-    background: transparent url("/img/top/Recommend.png") 0% 0% / cover no-repeat padding-box;
-    position: absolute;
-    left: -0.8rem;
-    bottom: 40px;
+  .whiteout{
     @media screen and (width <= 767px) {
-      width: 86.4vw;
-      height: 31.47vw;
+      bottom: 23.4vw;
+      left: -7vw;
     }
     @media screen and (width >= 768px) {
       left: -230px;
-      bottom: 150px;
+      top: 204px;
     }
   }
 
@@ -618,8 +600,19 @@
 
 #section_search {
   padding-bottom: 145px;
+  position: relative;
   @media screen and (width <= 767px) {
     padding-bottom: calc(100vw / 375 * 81);
+  }
+  .whiteout{
+    @media screen and (width <= 767px) {
+      right: 13vw;
+      top: -12.6vw;
+    }
+    @media screen and (width >= 768px) {
+      top: -7px;
+      right: 139px;
+    }
   }
   & > header {
     max-width: 900px;
@@ -637,25 +630,6 @@
       }
       @media screen and (width >= 768px) {
         top: 85px;
-      }
-      &::before {
-        content: "";
-        display: inline-block;
-        transform: rotate(-0.25turn);
-        width: 251px;
-        height: 165px;
-        background: transparent url("/img/top/Search.png") 0% 0% / cover no-repeat padding-box;
-        position: absolute;
-        @media screen and (width <= 767px) {
-          width: 48vw;
-          height: 31.47vw;
-          left: -14.5vw;
-          top: 23vw;
-        }
-        @media screen and (width >= 768px) {
-          top: 0;
-          left: -180px;
-        }
       }
     }
     & h3 {
@@ -709,25 +683,17 @@
   @media screen and (width <= 767px) {
     padding: calc(100vw / 375 * 41) 6.67vw 0;
   }
-  &::before {
-    content: "";
-    display: inline-block;
-    background: transparent url("/img/top/Price.png") 0% 0% / cover no-repeat padding-box;
-    position: absolute;
+  .whiteout {
     @media screen and (width <= 767px) {
-      width: 36.53vw;
-      height: 31.47vw;
-      top: 40.8vw;
       right: 6.67vw;
+      top: 53.5vw;
     }
-
     @media screen and (width >= 768px) {
-      width: 191px;
-      height: 165px;
-      bottom: -55px;
+      bottom: 12px;
       right: -50px;
     }
   }
+
   & h2 {
     @mixin rotate;
     position: relative;
@@ -773,9 +739,20 @@
 #section_qanda {
   max-width: 900px;
   margin: auto;
+  position: relative;
   @media screen and (width <= 767px) {
     padding: 0 6.67vw;
     margin-bottom: 100px;
+  }
+  .whiteout{
+    @media screen and (width <= 767px) {
+      right: 21vw;
+      top: 2vw;
+    }
+    @media screen and (width >= 768px) {
+      right: 55px;
+      top: -14px;
+    }
   }
   & h2 {
     @mixin rotate;
@@ -785,32 +762,11 @@
     @media screen and (width <= 767px) {
       margin-top: 14vw;
     }
-    &::before {
-      content: "";
-      display: inline-block;
-      transform: rotate(-0.25turn);
-      width: 178px;
-      height: 165px;
-      background: transparent url("/img/top/Q&A.png") 0% 0% / cover no-repeat padding-box;
-      position: absolute;
-      @media screen and (width <= 767px) {
-        width: 33.87vw;
-        height: 31.47vw;
-        top: 15vw;
-        left: -10.2vw;
-      }
-      @media screen and (width >= 768px) {
-        width: 178px;
-        height: 165px;
-        top: 60px;
-        left: -80px;
-      }
-    }
   }
   & dl {
     & div {
       padding-left: 60px;
-      background: transparent url("/img/top/top_icon-q_and_a.png") 0% 0% no-repeat padding-box;
+      background: transparent url("/img/top/top_icon-q_and_a.svg") 0% 0% no-repeat padding-box;
       min-height: 150px;
       @media screen and (width <= 767px) {
         & + div {

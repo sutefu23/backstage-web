@@ -55,7 +55,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="page_header">
         <h2 title="PRIVACY-POLICY">プライバシーポリシー</h2>
       </header>
 
@@ -214,18 +214,38 @@
 
     <ul id="sp_nav_button">
       <li>
-        <a href="#"><img src="/img/nav_sp_1.svg" alt="register" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_1.png 1x, /img/nav_sp_1@2x.png 2x" />
+            <img src="/img/nav_sp_1.png" alt="register" />
+          </picture>
+        </a>
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_2.svg" alt="login" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_2.png 1x, /img/nav_sp_2@2x.png 2x" />
+            <img src="/img/nav_sp_2.png" alt="login" />
+          </picture>
+        </a>
       </li>
       <li id="open_menu">
-        <img src="/img/nav_sp_3.svg" data-src="/img/nav_sp_3_on.svg" alt="menu" />
+        <picture>
+          <source media="(max-width:767px)" srcset="/img/nav_sp_3.png 1x, /img/nav_sp_3@2x.png 2x" data-srcset="/img/nav_sp_3_on.png 1x, /img/nav_sp_3_on@2x.png 2x"/>
+          <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
+        </picture>
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_4.svg" alt="page top" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_4.png 1x, /img/nav_sp_4@2x.png 2x" />
+            <img src="/img/nav_sp_4.png" alt="page top" />
+          </picture>
+  
+        </a>
       </li>
     </ul>
+
     <footer>
       <section>
         <h2>BACKSTAGE</h2>

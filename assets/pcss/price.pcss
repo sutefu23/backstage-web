@@ -1,38 +1,16 @@
 @charset "UTF-8";
 @import "ex/_common.pcss";
 
-body > article > header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background: transparent url("/img/price/header_image.png") 0% 0% / cover no-repeat padding-box;
-  & h2 {
-    text-align: center;
-    font: normal normal bold 36px/52px Noto Sans JP, sans-serif;
-    letter-spacing: 7.2px;
-    color: #0a2843;
-    line-height: 1;
-    @media screen and (width <= 767px) {
-      font: normal normal bold 24px/35px Noto Sans JP, sans-serif;
-      letter-spacing: 2.4px;
-    }
-    &::before {
-      content: attr(title);
-      display: block;
-      font: normal normal 16px/30px Oswald;
-      letter-spacing: 0px;
-      color: #02ccfc;
-    }
-  }
-}
-
 #section_description {
   max-width: 900px;
   margin: auto;
   width: 90%;
   & header {
     margin: 60px auto;
+    @media screen and (width <= 767px) {
+      margin-top: calc(100vw / 375 * 22);
+      margin-bottom: calc(100vw / 375 * 50);
+    }
     @media screen and (width >= 768px) {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -59,7 +37,8 @@ body > article > header {
     p.image {
       grid-area: image;
       @media screen and (width <= 767px) {
-        margin: 2rem auto;
+        margin-top: calc(100vw / 375 * 47);
+        margin-bottom: calc(100vw / 375 * 30);
         & > img {
           width: 100%;
         }
@@ -92,6 +71,9 @@ body > article > header {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 20px 5px;
+        @media screen and (width <= 767px) {
+          margin-top: 0;
+        }
         & li {
           position: relative;
           color: #ffffff;
@@ -143,7 +125,13 @@ body > article > header {
   & h3 {
     font: normal normal bold 36px/52px Noto Sans JP, sans-serif;
     width: fit-content;
+    color: #0A2843;
     margin: 40px auto;
+    text-align: center;
+    @media screen and (width <= 767px) {
+      max-width: calc(100vw / 375 * 194);
+      font-size: calc(100vw / 375 * 30);
+    }
   }
   & dl {
     width: 90%;
@@ -202,14 +190,16 @@ body > article > header {
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
+    color: #0A2843;
     font: normal normal bold 30px/56px Noto Sans JP, sans-serif;
     border: 1px solid #042842;
     border-radius: 20px;
     padding: 30px 55px;
     text-align: center;
     @media screen and (width <= 767px) {
-      font: normal normal bold 20px/35px Noto Sans JP, sans-serif;
-      padding: 20px;
+      width: 100%;
+      font: normal normal bold calc(100vw / 375 * 20)/calc(100vw / 375 * 35) Noto Sans JP, sans-serif;
+      padding: calc(100vw / 375 * 20) calc(100vw / 375 * 32);
     }
   }
 }

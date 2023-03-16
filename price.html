@@ -55,7 +55,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="page_header">
         <h2 title="PRICE">ご利用料金</h2>
       </header>
 
@@ -80,28 +80,31 @@
                 BACKSTAGEで会員制ビジネスを成功させるために必要なすべての機能が備わっています。このプランで、クリエイターの皆様は有意義な収入を得ることができ、エンジェル（支援者）はクリエイターの設定したここだけの特典が得られます。
               </p>
               <p class="image">
-                <img
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/price/price_image_2.png 1x, /img/price/price_image_2@2x.png 2x" />
+                  <source media="(max-width: 767px)" srcset="/img/price/price_image_2_sp.png 1x, /img/price/price_image_2_sp@2x.png 2x" />
+                  <img
+                  width="100%"
                   src="/img/price/price_image_2.png"
-                  srcset="/img/top/price_image_2.png 1x, /img/top/price_image_2@2x.png 2x"
+                  srcset="/img/price/price_image_2.png 1x, /img/price/price_image_2@2x.png 2x"
                   alt=""
                 />
+                </picture>
               </p>
             </header>
             <ul>
               <li>
-                オリジナルURLのついた<br />
-                クリエイターページ
+                オリジナルURLのついた<br class="pc"/>クリエイターページ
               </li>
               <li>
-                最大3つの<br />
-                支援プランの設定
+                最大3つの<br  class="pc"/>支援プランの設定
               </li>
               <li>
-                効果的なコンテンツ提供の<br />
+                効果的なコンテンツ提供の<br class="pc" />
                 ための数値分析ツール
               </li>
               <li>
-                ファンとの<br />
+                ファンとの<br class="pc" />
                 コミュニケーションツール
               </li>
             </ul>
@@ -149,16 +152,35 @@
 
     <ul id="sp_nav_button">
       <li>
-        <a href="#"><img src="/img/nav_sp_1.svg" alt="register" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_1.png 1x, /img/nav_sp_1@2x.png 2x" />
+            <img src="/img/nav_sp_1.png" alt="register" />
+          </picture>
+        </a>
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_2.svg" alt="login" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_2.png 1x, /img/nav_sp_2@2x.png 2x" />
+            <img src="/img/nav_sp_2.png" alt="login" />
+          </picture>
+        </a>
       </li>
       <li id="open_menu">
-        <img src="/img/nav_sp_3.svg" data-src="/img/nav_sp_3_on.svg" alt="menu" />
+        <picture>
+          <source media="(max-width:767px)" srcset="/img/nav_sp_3.png 1x, /img/nav_sp_3@2x.png 2x" data-srcset="/img/nav_sp_3_on.png 1x, /img/nav_sp_3_on@2x.png 2x"/>
+          <img src="/img/nav_sp_3.png" data-src="/img/nav_sp_3_on.png" alt="menu" />
+        </picture>
       </li>
       <li>
-        <a href="#"><img src="/img/nav_sp_4.svg" alt="page top" /></a>
+        <a href="#">
+          <picture>
+            <source media="(max-width:767px)" srcset="/img/nav_sp_4.png 1x, /img/nav_sp_4@2x.png 2x" />
+            <img src="/img/nav_sp_4.png" alt="page top" />
+          </picture>
+  
+        </a>
       </li>
     </ul>
     

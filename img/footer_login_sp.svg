@@ -5,7 +5,7 @@
       <rect x="0.5" y="0.5" width="153" height="39" rx="3.5" fill="none"/>
     </g>
     <g id="グループ_222" data-name="グループ 222" transform="translate(0 77)">
-      <text id="ログイン" transform="translate(244.048 6224)" font-size="16" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700"><tspan x="0" y="0">ログイン</tspan></text>
+      <text id="ログイン" transform="translate(244.048 6224)" font-size="16" font-family="Noto Sans JP, sans-serif" font-weight="700"><tspan x="0" y="0">ログイン</tspan></text>
       <g id="lock_black_24dp" transform="translate(214 6206)">
         <path id="パス_1" data-name="パス 1" d="M0,0H24.048V24.048H0Z" fill="none"/>
         <path id="パス_2" data-name="パス 2" d="M18.028,8.014h-1v-2a5.01,5.01,0,1,0-10.02,0v2H6a2.01,2.01,0,0,0-2,2v10.02a2.01,2.01,0,0,0,2,2H18.028a2.01,2.01,0,0,0,2-2V10.018A2.01,2.01,0,0,0,18.028,8.014Zm-6.012,9.018a2,2,0,1,1,2-2A2.01,2.01,0,0,1,12.016,17.032Zm3.106-9.018H8.91v-2a3.106,3.106,0,0,1,6.212,0Z" transform="translate(0.008 0.002)"/>

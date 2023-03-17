@@ -459,6 +459,12 @@
         color: #ffffff;
         border: none 0;
       }
+      &#merit_fan.active {
+        background-color: #05ba75;
+      }
+    }
+    &:has(#merit_fan.active){
+        border-bottom-color: #05ba75;
     }
   }
   & > section {
@@ -492,8 +498,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 12px;
       margin-top: 40px;
+      row-gap: 12px;
       @media screen and (width <= 767px) {
         gap: 2vw 2vw;
         justify-content: center;

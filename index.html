@@ -88,7 +88,7 @@
 
     <section id="section_backstage">
       <p class="button">
-        <a href="#">
+        <a href="#section_recommend">
           <picture>
             <source srcset="./img/top/top_button_1.png 1x, ./img/top/top_button_1@2x.png 2x" media="(min-width: 768px)" />
             <source srcset="./img/top/top_button_1sp@2x.png"
@@ -553,7 +553,7 @@ BACKSTAGE限定コンテンツが視聴、
     <p>©2023 BACKSTAGE.</p>
   </footer>
   <script>
-    new Splide("#main_slide", { type: "fade", arrows: false }).mount();
+    new Splide("#main_slide", { type: "fade", arrows: false, autoplay: true, rewind: true, }).mount();
     new Splide("#recommend_slide", {
       autoplay: true,
       perPage: 2.5,

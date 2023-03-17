@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("hashchange", changeHash);
 });
 
-
 // 画面内に要素が入ったかどうかを判定する isNoMatterSide 両側が切れていても上下入っていればフェードする
 function isElementInViewport(element: Element, isNoMatterSide:boolean = false) {
   const rect = element.getBoundingClientRect();
@@ -57,7 +56,7 @@ function isElementInViewport(element: Element, isNoMatterSide:boolean = false) {
   );
 }
 
-window.addEventListener('scroll', () => {
+document.addEventListener('scroll', () => {
   const targetElements = document.querySelectorAll('.fadeIn');
   if(!targetElements) return
   targetElements.forEach((elm)  => {

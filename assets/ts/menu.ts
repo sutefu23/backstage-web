@@ -32,3 +32,19 @@ const handler = (e: Event) => {
     if(source.dataset.orig) source.srcset = source.dataset.orig;
   }
 };
+
+
+// stickyメニューの表示非表示
+document.addEventListener('scroll', () => {
+  const floatNavi = document.querySelector('#sp_nav_button')
+  const footer = document.querySelector('body > footer')
+  if(!floatNavi || !footer ) return
+  const menuPosition = floatNavi.getBoundingClientRect();
+  const footerPosition = footer.getBoundingClientRect();
+  if(footerPosition.top - menuPosition.bottom > 50){
+    floatNavi.classList.remove('hide');
+  }else{
+    floatNavi.classList.add('hide');
+  }
+
+});

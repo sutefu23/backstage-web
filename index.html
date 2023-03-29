@@ -64,20 +64,22 @@
           <ul class="splide__list">
             <li class="splide__slide">
               <picture>
-                <source srcset="./img/top/top_slide_1pc.png" media="(min-width: 768px)" />
-                <source srcset="./img/top/top_slide_1@2x.png" media="(max-width: 767px)" />
+                <source srcset="./img/top/top_slide_1.png 1x, ./img/top/top_slide_1@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./img/top/top_slide_1_sp.png 1x, ./img/top/top_slide_1_sp@2x.png 2x" media="(max-width: 767px)" />
                 <img src="./img/top/top_slide_1.png" alt="クリエイターの“本当”を知って活動を応援" />
               </picture>
             </li>
             <li class="splide__slide">
               <picture>
-                <source srcset="./img/top/top_slide_2pc.png" media="(min-width: 768px)" />
+                <source srcset="./img/top/top_slide_2.png 1x, ./img/top/top_slide_2@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./img/top/top_slide_2_sp.png 1x, ./img/top/top_slide_2_sp@2x.png 2x" media="(max-width: 767px)" />
                 <img src="./img/top/top_slide_2.png" alt="クリエイターの“本当”を知って活動を応援" />
               </picture>
             </li>
             <li class="splide__slide">
               <picture>
-                <source srcset="./img/top/top_slide_3pc.png" media="(min-width: 768px)" />
+                <source srcset="./img/top/top_slide_3.png 1x, ./img/top/top_slide_3@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./img/top/top_slide_3_sp.png 1x, ./img/top/top_slide_3_sp@2x.png 2x" media="(max-width: 767px)" />
                 <img src="./img/top/top_slide_3.png" alt="クリエイターの“本当”を知って活動を応援" />
               </picture>
             </li>
@@ -91,7 +93,7 @@
         <a href="#section_recommend">
           <picture>
             <source srcset="./img/top/top_button_1.png 1x, ./img/top/top_button_1@2x.png 2x" media="(min-width: 768px)" />
-            <source srcset="./img/top/top_button_1sp@2x.png"
+            <source srcset="./img/top/top_button_1sp.png 1x, ./img/top/top_button_1sp@2x.png 2x"
               media="(max-width: 767px)" />
             <img src="./img/top/top_button_1sp.png"
               srcset="./img/top/top_button_1sp.png 1x, ./img/top/top_button_1sp@2x.png 2x" alt="クリエイターを探す" />
@@ -120,8 +122,18 @@ BACKSTAGE限定コンテンツが視聴、
         </div>
         <ul class="images">
           <li id="about_img_1" class="fadeIn" style="--data-duration:2.5s;--data-delay:0.3s"><img src="./img/top/top_about_1.png" alt="" /></li>
-          <li id="about_img_2" class="fadeIn" style="--data-delay:0.0s"><img src="./img/top/top_about_2.png" alt="" /></li>
-          <li id="about_img_3" class="fadeIn" style="--data-delay:0.6s"><img src="./img/top/top_about_3.png" alt="" /></li>
+          <li id="about_img_2" class="fadeIn" style="--data-delay:0.0s">
+            <picture>
+              <source srcset="../img/top/top_about_2.png 1x, ../img/top/top_about_2@2x.png 2x" />
+                <img src="./img/top/top_about_2.png" alt="" />
+            </picture>
+          </li>
+          <li id="about_img_3" class="fadeIn" style="--data-delay:0.6s">
+            <picture>
+              <source srcset="../img/top/top_about_3.png 1x, ../img/top/top_about_3@2x.png 2x" />
+                <img src="./img/top/top_about_3.png" alt="" />
+            </picture>
+          </li>
         </ul>
       </section>
 
@@ -262,7 +274,11 @@ BACKSTAGE限定コンテンツが視聴、
               他にも、動画やブログなどコンテンツ単位で購入することができるので、お気に入りのクリエイターをより深く知ることができます。
             </p>
           </div>
-          <img src="./img/top/top_fan_img.png" alt="" />
+          <picture >
+            <source srcset="./img/top/top_fan_img.png 1x, ./img/top/top_fan_img@2x.png 2x" />
+              <img src="./img/top/top_fan_img.png" alt="" />
+
+          </picture>
         </div>
 
         <ul>
@@ -400,7 +416,12 @@ BACKSTAGE限定コンテンツが視聴、
         <p>会員登録から運用まで、全て無料でBACKSTAGEをご利用いただけます。</p>
       </header>
 
-      <p class="image"><img src="./img/top/top_price.png" alt="" /></p>
+      <p class="image">
+        <picture>
+          <source media="(max-width:767px)" srcset="./img/top/top_price.png 1x, ./img/top/top_price@2x.png 2x" />
+          <img src="./img/top/top_price.png" alt="" /></p>
+        </picture>
+        
 
       <p class="button">
         <a href="./price.html">
